@@ -1,0 +1,17 @@
+name: Run Parallel Appium Tests
+
+on:
+  workflow_dispatch: # This allows you to run the workflow manually.
+  repository_dispatch:
+    types: [ run-parallel-tests ] # Allows external events to trigger this workflow
+
+jobs:
+  run-tests:
+    runs-on: self-hosted # This specifies that the job should run on your self-hosted runner.
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Run parallel tests
+      run: python parallel_test.py
