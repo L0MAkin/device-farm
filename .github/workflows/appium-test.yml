@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-tests:
-    runs-on: [self-hosted, linuxMacBook-Air-1st] # This specifies that the job should run on your self-hosted runner.
+    runs-on: [self-hosted, MacBook-Air-1st] # This specifies that the job should run on your self-hosted runner.
 
     steps:
     - name: Check out repository
