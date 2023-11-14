@@ -40,8 +40,8 @@ if __name__ == '__main__':
         device_port = udid_to_device_port_mapping[udid] 
         if udid == "00008020-00144CA40288003A":
             device_name = "iPhoneXs"
-        elif udid == "92ebd89ccf7dfe3b698c322678a9630ef9b95823":
-            device_name = "iPhone"
+        elif udid == "aac194e37009c63fdfb1fb4eabdacb75a67e609f":
+            device_name = "SE Pink"
         else:
             device_name = "Unknown Device" 
         print(device_name)
