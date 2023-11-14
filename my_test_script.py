@@ -3,10 +3,24 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, WebDriverException
+from appium.webdriver.extensions.clipboard import ClipboardContentType
 import time
-
+import base64
+import logging
 
 # Core functions: ------------------------
+
+url_to_copy = f"https://drive.google.com/uc?export=download&id=13Y5UyxU0vOkL3_KuHb1e3ih79Qitgq0X"
+
+def set_clipboard_content(driver, content):
+    try:
+        print (f"URL{content}")
+        byte_data = content.encode('UTF-8')
+        print (f"encoded_data = {byte_data}")
+        driver.set_clipboard(content=byte_data, content_type='URL')
+        print("Clipboard content set successfully.")
+    except Exception as e:
+        print(f"Error setting clipboard content: {e}")
 
 def execute_with_timeout(driver, timeout, func, *args):
     try:
@@ -58,12 +72,18 @@ def process_page(drv, button_name, page_number):
 
 def test_sequence(driver):
     try:
+         # Set a URL to the clipboard before processing pages
+        driver.execute_script('mobile: activateApp', {'bundleId': 'com.facebook.WebDriverAgentRunner.xctrunner'})
+        set_clipboard_content(driver, url_to_copy)
+        driver.execute_script('mobile: activateApp', {'bundleId': 'com.apple.shortcuts'})
+
         # Process each page
+        process_page(driver, "Add Video", "Add Video")
         process_page(driver, "Tiktok test", "Tiktok test")
-        process_page(driver, "recordPageUploadButton", "Second")
-        process_page(driver, "ic_album_camera_button_bg", "Third")
-        process_page(driver, "(editPageNextButton)", "4th")
-        process_page(driver, "Post", "5th")
+        #process_page(driver, "recordPageUploadButton", "Second")
+        #process_page(driver, "ic_album_camera_button_bg", "Third")
+        #process_page(driver, "(editPageNextButton)", "4th")
+        #process_page(driver, "Post", "5th")
 
         # Additional logic with buttons
         buttons = execute_with_timeout(driver, 5, driver.find_elements_by_class_name, 'XCUIElementTypeButton')

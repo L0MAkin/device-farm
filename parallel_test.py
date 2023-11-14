@@ -17,7 +17,6 @@ def run_tests_for_device(udid, appium_port, device_port, device_name):
         "waitForQuiescence": True,
         "wda_local_port": device_port,
         "clearSystemFiles": True,
-        "useNewWDA": True,
         "noReset": True
     }
 
