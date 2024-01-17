@@ -24,7 +24,10 @@ jobs:
         python-version: '3.11.7'
 
     - name: Check architecture
-      run: arch
+      run: echo $(arch)
+
+    - name: Check Python binary architecture
+      run: file $(which python)
 
     - name: Create Python virtual environment
       run: |
