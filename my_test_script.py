@@ -18,7 +18,6 @@ import text_recognition
 import io
 from PIL import Image
 import base64
-import requests
 
 
 # Core functions: ------------------------
