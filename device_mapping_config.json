@@ -1,0 +1,15 @@
+{
+  "devices": [
+      {
+          "udid": "00008020-00144CA40288003A",
+          "name": "iPhoneXS",
+          "accounts": ["@tiktonic09", "andriylomakin"]
+      },
+      {
+          "udid": "92ebd89ccf7dfe3b698c322678a9630ef9b95823",
+          "name": "SE Pink",
+          "accounts": ["@thedennybalon", "@dennythedon4", "@damnhackerdamn"]
+      }
+  ]
+}
+

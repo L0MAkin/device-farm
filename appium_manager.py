@@ -54,7 +54,7 @@ def main():
         print(f"Starting Appium for UDID {udid} on port {port}...")
         process = start_appium_on_port(port, device_port)
         if process:
-            appium_processes[port] = process
+            appium_processes[udid] = process
         print(f"Starting Appium for UDID {udid} webdriveragent-port {device_port}...")
     return udid_to_port_mapping, udid_to_device_port_mapping, appium_processes
 
