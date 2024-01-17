@@ -48,7 +48,18 @@ def process_video_config(config_str, default_config_path):
 
 def get_video_config():
     # These values are obtained internally within the function
-    config_str = sys.argv[1] if len(sys.argv) > 1 else ''
+       # Check if the first argument is provided and is a valid path to a file
+    if len(sys.argv) > 1:
+        config_arg = sys.argv[1]
+        if os.path.isfile(config_arg):
+            # If it's a file path, load the JSON data from the file
+            with open(config_arg, 'r') as file:
+                config_str = file.read()
+        else:
+            # Otherwise, treat it as a JSON string
+            config_str = config_arg
+    else:
+        config_str = ''
     default_config_path = sys.argv[2] if len(sys.argv) > 2 else 'default_video_config.json'
     return process_video_config(config_str, default_config_path)
 
