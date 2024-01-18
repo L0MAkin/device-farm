@@ -81,6 +81,7 @@ jobs:
         python parallel_test.py
 
     - name: Commit and Push Changes
+      if: always()
       run: |
         git config --global user.name 'L0MAkin'
         git config --global user.email 'lomakin.andrey.l9@gmail.com'
