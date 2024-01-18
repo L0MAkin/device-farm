@@ -32,18 +32,17 @@ jobs:
     - name: Create Python virtual environment
       run: |
         python -m venv venv
-
-    - name: Activate virtual environment
-      run: |
         source venv/bin/activate
 
     - name: Upgrade pip
       run: |
-        arch -arm64 python -m pip install --upgrade pip
+        source venv/bin/activate
+        python -m pip install --upgrade pip
 
     - name: Install dependencies
       run: |
-        arch -arm64 pip install -r requirements.txt
+        source venv/bin/activate
+        pip install -r requirements.txt
 
     - name: Run process_video_config.py
       env:
