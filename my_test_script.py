@@ -59,6 +59,8 @@ def find_account_name_and_coordinates(ocr_results, account_names):
     # Convert a single account name into a list if necessary
     if isinstance(account_names, str):
         account_names = [account_names]
+    print(account_names)
+    print(ocr_results)
 
     for result in ocr_results:
         if isinstance(result, dict) and 'text' in result and 'bounding_box' in result:
@@ -340,10 +342,6 @@ def test_sequence(driver, device_status_file_path):
         time.sleep(5)
         screenshot_main_base64 = driver.get_screenshot_as_base64()
         current_account, coordinates = get_current_account(device_status_file_path, screenshot_main_base64)
-        print(current_account)
-        print(coordinates)
-        if not current_account:
-             raise Exception("Failed to get current account.")
 
         # Step 3: Get URL from config
         video_url, account, description = process_account_videos(driver, current_account, device_status_file_path)
