@@ -42,16 +42,19 @@ jobs:
     - name: Install dependencies
       run: |
         source venv/bin/activate
-        pip install --no-cache-dir -r requirements.txt
+        pip install -r requirements.txt
 
     - name: Run process_video_config.py
       env:
         CONFIG_DATA: ${{ github.event.inputs.config_data }}
       run: |
+        source venv/bin/activate
         python process_video_config.py "$CONFIG_DATA"
 
     - name: Run parallel tests
-      run: python parallel_test.py
+      run: | 
+        source venv/bin/activate
+        python parallel_test.py
 
     - name: Commit and Push Changes
       run: |
