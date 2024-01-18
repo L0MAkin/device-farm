@@ -450,9 +450,9 @@ def test_sequence(driver, device_status_file_path):
         
         # Step 12: Wait until the video uploaded
         print("Before timer", datetime.now().isoformat())
-        time.sleep(25)    
+        time.sleep(10)    
         print("After timer", datetime.now().isoformat())
-        max_retries = 4
+        max_retries = 5
         retry_count = 0
         current_timeout = 10
 
@@ -469,7 +469,7 @@ def test_sequence(driver, device_status_file_path):
                 break
             else:
                 retry_count += 1
-                current_timeout += 40
+                current_timeout += 20
         if retry_count >= max_retries and video_count_after_post == video_count:
             raise Exception("Video upload failed: the video count did not increase.")
 
