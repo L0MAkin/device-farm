@@ -55,7 +55,7 @@ jobs:
 
     - name: Create JSON File from CONFIG_DATA
       env:
-        CONFIG_DATA: ${{ github.event.inputs.config_data }}
+        CONFIG_DATA: ${{ github.event.client_payload.config_data }}
       run: |
         echo "DEBUG: CONFIG_DATA content:"
         echo "$CONFIG_DATA"
