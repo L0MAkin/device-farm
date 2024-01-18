@@ -57,13 +57,18 @@ jobs:
       env:
         CONFIG_DATA: ${{ github.event.inputs.config_data }}
       run: |
-        source venv/bin/activate
+        echo "DEBUG: CONFIG_DATA content:"
+        echo "$CONFIG_DATA"
         echo "$CONFIG_DATA" > config_data.json
 
     - name: Display JSON Config Data
       run: |
-          source venv/bin/activate
-          cat config_data.json
+        touch config_data.json  # This is just to ensure the file exists for testing
+        echo "Current directory: $(pwd)"
+        echo "Listing files in current directory:"
+        ls -l
+        echo "Displaying JSON Config Data:"
+        cat config_data.json || echo "File not found or empty"
 
     - name: Run process_video_config.py with JSON File
       run: |
