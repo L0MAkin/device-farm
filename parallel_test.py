@@ -21,7 +21,7 @@ def run_tests_for_device(udid, appium_port, device_port, device_name, device_sta
     options.bundle_id = "com.apple.shortcuts"
     options.xcode_org_id = "3GXHKFX93A"
     options.xcode_signing_id = "Apple Development"
-    options.show_xcode_log = True
+    options.show_xcode_log = False
     options.set_capability("appPushTimeout", 5000)
     options.new_command_timeout = 2000
     options.wda_local_port = device_port  # Replace with your WDA local port variable
