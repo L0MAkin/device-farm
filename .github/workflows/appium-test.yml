@@ -53,12 +53,16 @@ jobs:
         source venv/bin/activate
         pip install -r requirements.txt
 
-    - name: Run process_video_config.py
+    - name: Create JSON File from CONFIG_DATA
       env:
         CONFIG_DATA: ${{ github.event.inputs.config_data }}
       run: |
+        echo "$CONFIG_DATA" > config_data.json
+
+    - name: Run process_video_config.py with JSON File
+      run: |
         source venv/bin/activate
-        python process_video_config.py "$CONFIG_DATA"
+        python process_video_config.py config_data.json
 
     - name: Run parallel tests
       run: | 
