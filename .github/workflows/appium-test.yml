@@ -57,6 +57,7 @@ jobs:
       env:
         CONFIG_DATA: ${{ github.event.inputs.config_data }}
       run: |
+        source venv/bin/activate
         echo "$CONFIG_DATA" > config_data.json
 
     - name: Run process_video_config.py with JSON File
