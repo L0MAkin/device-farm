@@ -42,7 +42,7 @@ jobs:
     - name: Install dependencies
       run: |
         source venv/bin/activate
-        pip install -r requirements.txt
+        pip install --no-cache-dir -r requirements.txt
 
     - name: Run process_video_config.py
       env:
