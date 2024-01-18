@@ -60,6 +60,11 @@ jobs:
         source venv/bin/activate
         echo "$CONFIG_DATA" > config_data.json
 
+    - name: Display JSON Config Data
+      run: |
+          source venv/bin/activate
+          cat config_data.json
+
     - name: Run process_video_config.py with JSON File
       run: |
         source venv/bin/activate
