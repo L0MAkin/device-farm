@@ -8,7 +8,7 @@ on:
         required: false
         default: ''  # Default value if none provided
   repository_dispatch:
-    types: [run-parallel-tests]
+    types: [run-github-tests]
 
 jobs:
   run-tests:
