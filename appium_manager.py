@@ -28,8 +28,9 @@ def start_appium_on_port(port, device_port):
     if is_port_in_use(port):
         print(f"Appium is already running on port {port}.")
         return None
-    cmd = f'appium -p {port} --use-driver=xcuitest --driver-xcuitest-webdriveragent-port {device_port}'
-    process = subprocess.Popen(cmd, shell=True)
+    log_file = f"appium_logs_{port}.log"
+    cmd = f'appium -p {port} --use-driver=xcuitest --driver-xcuitest-webdriveragent-port {device_port} --log {log_file}'
+    process = subprocess.Popen(cmd, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print (f'appium -p {port} --use-driver=xcuitest --driver-xcuitest-webdriveragent-port {device_port}')
     sleep(5)  # Give Appium time to start
     return process
