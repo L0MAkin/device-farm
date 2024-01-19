@@ -1,4 +1,4 @@
-name: Run Parallel Appium Tests with Video Config Processing
+name: Run github save file
 
 on:
   workflow_dispatch:
