@@ -44,6 +44,6 @@ jobs:
         echo $MY_PAT | git credential approve
         git add .
         git commit -m "Updated device status config files"
-        git push
+        git push https://${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}@github.com/L0MAkin/device-farm.git
       env:
         MY_PAT: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
