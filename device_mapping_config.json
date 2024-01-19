@@ -1,14 +1,19 @@
 {
   "devices": [
       {
-          "udid": "00008020-00144CA40288003A",
-          "name": "iPhoneXS",
-          "accounts": ["@tiktonic09", "@andriylomakin"]
+          "udid": "82579a03f29e60a9805bb342332341f6a8b1df70",
+          "name": "Iphone 7 Black",
+          "accounts": ["@iamthedennyoffici3", "@dennisbalon", "@iamtherealdenny"]
       },
       {
-          "udid": "92ebd89ccf7dfe3b698c322678a9630ef9b95823",
-          "name": "SE Pink",
-          "accounts": ["@iamtherealdenny", "@dennythedon4", "@damnhackerdamn"]
+          "udid": "aac194e37009c63fdfb1fb4eabdacb75a67e609f",
+          "name": "iPhone SE Pink",
+          "accounts": ["@dennythedon4"]
+      },
+      {
+          "udid": "1b5f6ce76fac656c04db615e11a901ede5ecea6a",
+          "name": "iPhone SE Silver",
+          "accounts": ["@damnhackerdamn", "@thedennybalon"]
       }
   ]
 }
