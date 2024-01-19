@@ -36,14 +36,8 @@ jobs:
         echo "Displaying JSON Config Data:"
         cat config_data.json || echo "File not found or empty"
 
-    - name: Commit and Push Changes
-      if: always()
-      run: |
-        git config --global user.name 'L0MAkin'
-        git config --global user.email 'lomakin.andrey.l9@gmail.com'
-        echo $MY_PAT | git credential approve
-        git add .
-        git commit -m "Updated device status config files"
-        git push https://${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}@github.com/L0MAkin/device-farm.git
-      env:
-        MY_PAT: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
+    - name: Github commit and push
+      uses: Smart-Transportation/push@v1.3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+            
