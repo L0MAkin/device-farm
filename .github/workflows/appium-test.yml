@@ -12,7 +12,7 @@ on:
 
 jobs:
   run-tests:
-    runs-on: [self-hosted, macOS.12.7, MacBook-Poland-Wroclaw]
+    runs-on: [self-hosted, macOS.12.7]
 
     steps:
 
