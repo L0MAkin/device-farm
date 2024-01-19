@@ -1,0 +1,1109 @@
+2024-01-19 18:36:40:255 [Appium] Welcome to Appium v2.2.1
+2024-01-19 18:36:40:259 [Appium] Non-default server args:
+2024-01-19 18:36:40:261 [Appium] { useDrivers: [ 'xcuitest' ], driver: { xcuitest: { wdaLocalPort: 9100 } } }
+2024-01-19 18:36:40:262 [Appium] Attempting to load driver xcuitest...
+2024-01-19 18:36:40:266 [Appium] Requiring driver at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver
+2024-01-19 18:36:43:132 [Appium] Appium REST http interface listener started on http://0.0.0.0:4723
+2024-01-19 18:36:43:135 [Appium] You can provide the following URLs in your client code to connect to this server:
+2024-01-19 18:36:43:143 [Appium] 	http://127.0.0.1:4723/ (only accessible from the same host)
+2024-01-19 18:36:43:143 [Appium] 	http://192.168.132.150:4723/
+2024-01-19 18:36:43:144 [Appium] 	http://169.254.101.81:4723/
+2024-01-19 18:36:43:144 [Appium] 	http://169.254.93.18:4723/
+2024-01-19 18:36:43:145 [Appium] 	http://169.254.207.77:4723/
+2024-01-19 18:36:43:145 [Appium] 	http://169.254.203.172:4723/
+2024-01-19 18:36:43:145 [Appium] 	http://169.254.249.169:4723/
+2024-01-19 18:36:43:145 [Appium] 	http://169.254.172.13:4723/
+2024-01-19 18:36:43:146 [Appium] Available drivers:
+2024-01-19 18:36:43:146 [Appium]   - xcuitest@5.8.2 (automationName 'XCUITest')
+2024-01-19 18:36:43:146 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2024-01-19 18:36:52:607 [HTTP] Request idempotency key: eec2ee9c-9fc0-4d47-ab4d-2a619cc9cb34
+2024-01-19 18:36:52:647 [HTTP] --> POST /session
+2024-01-19 18:36:52:647 [HTTP] {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"XCUITest","platformName":"iOS","appium:deviceName":"Iphone 7 Black","appium:udid":"82579a03f29e60a9805bb342332341f6a8b1df70","appium:bundleId":"com.apple.shortcuts","appium:xcodeOrgId":"3GXHKFX93A","appium:xcodeSigningId":"Apple Development","appium:showXcodeLog":false,"appium:appPushTimeout":5000,"appium:newCommandTimeout":2000,"appium:wdaLocalPort":9100,"appium:clearSystemFiles":true,"appium:autoDismissAlerts":true,"appium:noReset":true,"appium:skipLogCapture":true}}}
+2024-01-19 18:36:52:649 [AppiumDriver@8831] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"XCUITest","platformName":"iOS","appium:deviceName":"Iphone 7 Black","appium:udid":"82579a03f29e60a9805bb342332341f6a8b1df70","appium:bundleId":"com.apple.shortcuts","appium:xcodeOrgId":"3GXHKFX93A","appium:xcodeSigningId":"Apple Development","appium:showXcodeLog":false,"appium:appPushTimeout":5000,"appium:newCommandTimeout":2000,"appium:wdaLocalPort":9100,"appium:clearSystemFiles":true,"appium:autoDismissAlerts":true,"appium:noReset":true,"appium:skipLogCapture":true}}]
+2024-01-19 18:36:52:651 [AppiumDriver@8831] Event 'newSessionRequested' logged at 1705689412650 (19:36:52 GMT+0100 (Central European Standard Time))
+2024-01-19 18:36:52:657 [Appium] Attempting to find matching driver for automationName 'XCUITest' and platformName 'iOS'
+2024-01-19 18:36:52:659 [Appium] The 'xcuitest' driver was installed and matched caps.
+2024-01-19 18:36:52:659 [Appium] Will require it at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver
+2024-01-19 18:36:52:659 [Appium] Requiring driver at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver
+2024-01-19 18:36:52:659 [AppiumDriver@8831] Appium v2.2.1 creating new XCUITestDriver (v5.8.2) session
+2024-01-19 18:36:52:659 [AppiumDriver@8831] Checking BaseDriver versions for Appium and XCUITestDriver
+2024-01-19 18:36:52:659 [AppiumDriver@8831] Appium's BaseDriver version is 9.5.0
+2024-01-19 18:36:52:660 [AppiumDriver@8831] XCUITestDriver's BaseDriver version is 9.5.0
+2024-01-19 18:36:52:670 [XCUITestDriver@70b7] Creating session with W3C capabilities: {
+2024-01-19 18:36:52:670 [XCUITestDriver@70b7]   "alwaysMatch": {
+2024-01-19 18:36:52:670 [XCUITestDriver@70b7]     "platformName": "iOS",
+2024-01-19 18:36:52:670 [XCUITestDriver@70b7]     "appium:automationName": "XCUITest",
+2024-01-19 18:36:52:670 [XCUITestDriver@70b7]     "appium:deviceName": "Iphone 7 Black",
+2024-01-19 18:36:52:671 [XCUITestDriver@70b7]     "appium:udid": "82579a03f29e60a9805bb342332341f6a8b1df70",
+2024-01-19 18:36:52:671 [XCUITestDriver@70b7]     "appium:bundleId": "com.apple.shortcuts",
+2024-01-19 18:36:52:671 [XCUITestDriver@70b7]     "appium:xcodeOrgId": "3GXHKFX93A",
+2024-01-19 18:36:52:671 [XCUITestDriver@70b7]     "appium:xcodeSigningId": "Apple Development",
+2024-01-19 18:36:52:671 [XCUITestDriver@70b7]     "appium:showXcodeLog": false,
+2024-01-19 18:36:52:671 [XCUITestDriver@70b7]     "appium:appPushTimeout": 5000,
+2024-01-19 18:36:52:671 [XCUITestDriver@70b7]     "appium:newCommandTimeout": 2000,
+2024-01-19 18:36:52:671 [XCUITestDriver@70b7]     "appium:wdaLocalPort": 9100,
+2024-01-19 18:36:52:671 [XCUITestDriver@70b7]     "appium:clearSystemFiles": true,
+2024-01-19 18:36:52:672 [XCUITestDriver@70b7]     "appium:autoDismissAlerts": true,
+2024-01-19 18:36:52:672 [XCUITestDriver@70b7]     "appium:noReset": true,
+2024-01-19 18:36:52:672 [XCUITestDriver@70b7]     "appium:skipLogCapture": true
+2024-01-19 18:36:52:672 [XCUITestDriver@70b7]   },
+2024-01-19 18:36:52:672 [XCUITestDriver@70b7]   "firstMatch": [
+2024-01-19 18:36:52:672 [XCUITestDriver@70b7]     {}
+2024-01-19 18:36:52:672 [XCUITestDriver@70b7]   ]
+2024-01-19 18:36:52:672 [XCUITestDriver@70b7] }
+2024-01-19 18:36:52:694 [XCUITestDriver@70b7] 'platformVersion' capability ('undefined') is not a valid version number. Consider fixing it or be ready to experience an inconsistent driver behavior.
+2024-01-19 18:36:52:695 [XCUITestDriver@70b7 (08ef3e02)] Session created with session id: 08ef3e02-e055-404b-9383-ab3f41538392
+2024-01-19 18:36:52:696 [XCUITestDriver@70b7 (08ef3e02)] CLI arg 'wdaLocalPort' with value '9100' overwrites value '9100' sent in via caps)
+2024-01-19 18:36:52:702 [XCUITestDriver@70b7 (08ef3e02)] 'platformVersion' capability ('undefined') is not a valid version number. Consider fixing it or be ready to experience an inconsistent driver behavior.
+2024-01-19 18:36:52:725 [XCUITest] Current user: 'dennybalon'
+2024-01-19 18:36:52:763 [XCUITestDriver@70b7 (08ef3e02)] Available devices: 82579a03f29e60a9805bb342332341f6a8b1df70, aac194e37009c63fdfb1fb4eabdacb75a67e609f, 1b5f6ce76fac656c04db615e11a901ede5ecea6a
+2024-01-19 18:36:52:764 [XCUITest] Creating iDevice object with udid '82579a03f29e60a9805bb342332341f6a8b1df70'
+2024-01-19 18:36:52:764 [XCUITestDriver@70b7 (08ef3e02)] Determining device to run tests on: udid: '82579a03f29e60a9805bb342332341f6a8b1df70', real device: true
+2024-01-19 18:36:52:850 [XCUITestDriver@70b7 (08ef3e02)] No platformVersion specified. Using device version: '15.8'
+2024-01-19 18:36:52:923 [XCUITestDriver@70b7 (08ef3e02)] Event 'xcodeDetailsRetrieved' logged at 1705689412923 (19:36:52 GMT+0100 (Central European Standard Time))
+2024-01-19 18:36:52:924 [XCUITestDriver@70b7 (08ef3e02)] Event 'appConfigured' logged at 1705689412924 (19:36:52 GMT+0100 (Central European Standard Time))
+2024-01-19 18:36:52:924 [XCUITestDriver@70b7 (08ef3e02)] Event 'resetStarted' logged at 1705689412924 (19:36:52 GMT+0100 (Central European Standard Time))
+2024-01-19 18:36:52:925 [XCUITest] Reset: fullReset not set. Leaving as is
+2024-01-19 18:36:52:925 [XCUITestDriver@70b7 (08ef3e02)] Event 'resetComplete' logged at 1705689412925 (19:36:52 GMT+0100 (Central European Standard Time))
+2024-01-19 18:36:52:926 [XCUITestDriver@70b7 (08ef3e02)] Using WDA path: '/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+2024-01-19 18:36:52:926 [XCUITestDriver@70b7 (08ef3e02)] Using WDA agent: '/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+2024-01-19 18:36:52:957 [XCUITestDriver@70b7 (08ef3e02)] 'skipLogCapture' is set. Skipping starting logs such as crash, system, safari console and safari network.
+2024-01-19 18:36:52:957 [XCUITestDriver@70b7 (08ef3e02)] Setting up real device
+2024-01-19 18:36:53:742 [XCUITestDriver@70b7 (08ef3e02)] No obsolete cached processes from previous WDA sessions listening on port 9100 have been found
+2024-01-19 18:36:53:743 [DevCon Factory] Requesting connection for device 82579a03f29e60a9805bb342332341f6a8b1df70 on local port 9100, device port 9100
+2024-01-19 18:36:53:743 [DevCon Factory] Cached connections count: 0
+2024-01-19 18:36:53:747 [DevCon Factory] Successfully requested the connection for 82579a03f29e60a9805bb342332341f6a8b1df70:9100
+2024-01-19 18:36:53:748 [XCUITestDriver@70b7 (08ef3e02)] Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+2024-01-19 18:36:53:752 [WD Proxy] Matched '/status' to command name 'getStatus'
+2024-01-19 18:36:53:753 [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:36:53:813 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:36:53:817 [WD Proxy] socket hang up
+2024-01-19 18:36:53:817 [XCUITestDriver@70b7 (08ef3e02)] WDA is not listening at 'http://127.0.0.1:9100/'
+2024-01-19 18:36:53:818 [XCUITestDriver@70b7 (08ef3e02)] WDA is currently not running. There is nothing to cache
+2024-01-19 18:36:53:818 [XCUITestDriver@70b7 (08ef3e02)] Trying to start WebDriverAgent 1 times with 10000ms interval
+2024-01-19 18:36:53:818 [XCUITestDriver@70b7 (08ef3e02)] These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+2024-01-19 18:36:53:819 [XCUITestDriver@70b7 (08ef3e02)] Event 'wdaStartAttempted' logged at 1705689413819 (19:36:53 GMT+0100 (Central European Standard Time))
+2024-01-19 18:36:53:819 [XCUITestDriver@70b7 (08ef3e02)] Launching WebDriverAgent on the device
+2024-01-19 18:36:53:845 [XCUITestDriver@70b7 (08ef3e02)] There is no need to perform the project cleanup. A fresh install has been detected
+2024-01-19 18:36:53:849 [WebDriverAgent] Killing running processes 'xcodebuild.*82579a03f29e60a9805bb342332341f6a8b1df70' for the device 82579a03f29e60a9805bb342332341f6a8b1df70...
+2024-01-19 18:36:54:035 [WebDriverAgent] 'pgrep -if xcodebuild.*82579a03f29e60a9805bb342332341f6a8b1df70' didn't detect any matching processes. Return code: 1
+2024-01-19 18:36:54:037 [XCUITestDriver@70b7 (08ef3e02)] Beginning test with command 'xcodebuild build-for-testing test-without-building -project /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=82579a03f29e60a9805bb342332341f6a8b1df70 IPHONEOS_DEPLOYMENT_TARGET=15.8 DEVELOPMENT_TEAM=3GXHKFX93A CODE_SIGN_IDENTITY=Apple Development GCC_TREAT_WARNINGS_AS_ERRORS=0 COMPILER_INDEX_STORE_ENABLE=NO' in directory '/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+2024-01-19 18:36:54:039 [XCUITestDriver@70b7 (08ef3e02)] Output from xcodebuild will not be logged. To change this, use 'showXcodeLog' desired capability
+2024-01-19 18:36:58:065 [XCUITestDriver@70b7 (08ef3e02)] Waiting up to 60000ms for WebDriverAgent to start
+2024-01-19 18:36:58:066 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:36:58:066 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:36:58:077 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:36:58:078 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:36:59:079 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:36:59:081 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:36:59:091 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:36:59:092 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:00:094 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:00:094 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:00:159 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:00:162 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:01:174 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:01:177 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:01:270 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:01:273 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:02:275 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:02:275 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:02:303 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:02:304 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:03:305 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:03:306 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:03:372 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:03:374 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:03:762 [XCUITestDriver@70b7 (08ef3e02)] Parsed BUILD_DIR configuration value: '/Users/dennybalon/Library/Developer/Xcode/DerivedData/WebDriverAgent-boimmbejufdrdjccnraltpugdpff/Build/Products'
+2024-01-19 18:37:03:762 [XCUITestDriver@70b7 (08ef3e02)] Got derived data root: '/Users/dennybalon/Library/Developer/Xcode/DerivedData/WebDriverAgent-boimmbejufdrdjccnraltpugdpff'
+2024-01-19 18:37:04:377 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:04:377 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:04:386 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:04:388 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:05:390 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:05:391 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:05:403 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:05:403 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:06:406 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:06:406 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:06:417 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:06:418 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:07:419 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:07:419 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:07:430 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:07:431 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:08:432 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:08:433 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:08:440 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:08:441 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:09:443 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:09:444 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:09:451 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:09:452 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:10:454 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:10:454 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:10:490 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:10:491 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:11:494 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:11:495 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:11:503 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:11:504 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:12:506 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:12:507 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:12:519 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:12:520 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:13:521 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:13:521 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:13:534 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:13:535 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:14:538 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:14:538 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:14:557 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:14:558 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:15:560 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:15:560 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:15:567 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:15:568 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:16:569 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:16:569 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:16:579 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:16:581 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:17:583 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:17:583 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:17:609 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:17:620 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:18:621 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:18:621 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:18:634 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:18:635 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:19:638 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:19:638 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:19:646 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:19:647 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:20:647 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:20:648 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:20:655 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:20:656 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:21:657 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:21:658 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:21:670 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:21:671 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:22:671 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:22:671 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:22:679 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:22:681 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:23:681 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:23:682 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:23:691 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:23:692 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:24:695 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:24:695 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:24:717 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:24:718 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:25:718 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:25:719 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:25:768 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:25:777 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:26:778 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:26:779 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:26:823 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:26:823 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:27:826 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:27:826 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:27:834 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:27:835 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:28:838 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:28:838 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:28:845 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:28:846 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:29:847 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:29:847 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:29:855 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:29:855 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:30:858 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:30:858 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:30:864 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:30:865 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:31:870 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:31:870 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:31:881 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:31:881 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:32:884 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:32:884 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:32:897 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:32:898 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:33:901 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:33:901 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:33:951 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:33:967 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:34:968 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:34:969 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:34:976 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:34:977 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:35:981 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:35:981 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:35:989 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:35:990 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:36:993 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:36:994 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:37:001 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:37:002 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:38:005 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:38:006 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:38:013 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:38:014 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:39:016 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:39:017 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:39:026 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:39:027 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:40:033 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:40:033 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:40:045 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:40:046 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:41:048 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:41:049 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:41:057 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:41:058 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:42:060 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:42:060 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:42:090 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:42:092 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:43:093 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:43:094 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:43:102 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:43:103 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:44:103 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:44:104 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:44:111 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:44:112 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:45:113 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:45:114 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:45:123 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:45:124 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:46:125 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:46:125 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:46:134 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:46:134 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:47:137 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:47:137 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:47:146 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:47:147 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:48:150 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:48:151 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:48:159 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:48:160 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:49:161 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:49:162 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:49:169 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:49:171 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:50:172 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:50:173 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:50:181 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:50:182 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:51:183 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:51:183 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:51:191 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:51:192 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:52:193 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:52:194 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:52:203 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:52:205 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:53:207 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:53:208 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:53:217 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:53:219 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:54:221 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:54:222 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:54:231 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:54:232 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:55:234 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:55:234 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:55:243 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:55:244 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:56:246 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:56:246 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:56:267 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:56:270 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:57:272 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:57:273 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:57:281 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:57:282 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:58:284 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:58:284 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:58:293 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:58:294 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:37:59:297 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:37:59:297 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:37:59:306 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:37:59:306 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:00:308 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:00:309 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:00:317 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:00:318 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:01:320 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:01:320 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:01:327 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:01:329 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:02:330 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:02:330 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:02:337 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:02:338 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:03:340 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:03:340 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:03:347 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:03:348 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:04:350 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:04:350 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:04:381 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:04:385 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:05:388 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:05:388 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:05:396 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:05:397 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:06:399 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:06:399 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:06:407 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:06:408 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:07:410 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:07:410 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:07:419 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:07:420 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:08:421 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:08:421 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:08:429 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:08:430 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:09:431 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:09:431 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:09:439 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:09:440 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:10:442 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:10:443 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:10:451 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:10:452 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:11:454 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:11:455 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:11:462 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:11:464 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:12:466 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:12:468 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:12:497 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:12:499 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:13:501 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:13:501 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:13:509 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:13:510 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:14:511 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:14:512 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:14:520 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:14:521 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:15:523 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:15:523 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:15:531 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:15:531 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:16:534 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:16:534 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:16:540 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:16:542 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:17:543 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:17:543 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:17:550 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:17:551 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:18:552 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:18:553 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:18:560 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:18:561 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:19:562 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:19:563 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:19:570 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:19:571 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:20:575 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:20:576 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:20:670 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:20:671 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:21:673 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:21:673 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:21:681 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:21:682 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:22:683 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:22:684 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:22:690 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:22:691 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:23:693 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:23:694 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:23:717 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:23:718 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:24:719 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:24:719 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:24:726 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:24:727 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:25:727 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:25:727 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:25:743 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:25:745 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:26:746 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:26:746 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:26:758 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:26:759 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:27:760 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:27:760 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:27:793 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:27:794 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:28:797 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:28:800 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:28:872 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:28:882 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:29:892 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:29:892 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:29:905 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:29:906 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:30:908 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:30:909 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:30:918 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:30:919 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:31:920 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:31:921 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:31:933 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:31:934 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:32:937 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:32:937 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:32:950 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:32:951 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:33:953 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:33:953 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:33:964 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:33:965 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:34:966 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:34:966 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:34:981 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:34:982 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:35:984 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:35:984 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:36:006 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:36:007 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:37:008 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:37:008 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:37:030 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:37:032 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:38:039 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:38:040 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:38:053 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:38:054 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:39:056 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:39:056 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:39:081 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:39:082 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:40:085 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:40:089 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:40:124 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:40:124 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:41:127 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:41:127 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:41:136 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:41:137 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:42:138 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:42:139 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:42:152 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:42:153 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:43:155 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:43:155 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:43:175 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:43:176 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:44:178 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:44:178 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:44:189 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:44:190 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:45:191 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:45:191 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:45:218 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:45:220 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:46:233 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:46:233 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:46:256 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:46:257 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:47:259 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:47:259 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:47:272 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:47:273 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:48:274 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:48:274 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:48:282 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:48:283 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:49:285 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:49:286 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:49:293 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:49:294 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:50:296 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:50:297 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:50:304 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:50:306 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:51:306 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:51:306 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:51:314 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:51:315 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:52:316 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:52:316 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:52:324 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:52:325 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:53:327 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:53:327 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:53:335 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:53:336 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:54:337 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:54:337 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:54:390 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:54:398 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:55:401 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:55:401 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:55:411 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:55:412 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:56:414 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:56:415 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:56:421 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:56:422 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:57:424 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:57:424 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:57:432 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:57:433 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:58:433 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:58:433 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:58:441 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:58:442 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:59:443 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:38:59:443 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:38:59:451 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:38:59:452 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:38:59:462 [XCUITestDriver@70b7 (08ef3e02)] Error: Unable to connect to running WebDriverAgent: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+2024-01-19 18:38:59:462 [XCUITestDriver@70b7 (08ef3e02)]     at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/lib/xcodebuild.js:425:17
+2024-01-19 18:38:59:462 [XCUITestDriver@70b7 (08ef3e02)]     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-01-19 18:38:59:462 [XCUITestDriver@70b7 (08ef3e02)]     at wrapped (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/asyncbox/lib/asyncbox.js:93:13)
+2024-01-19 18:38:59:463 [XCUITestDriver@70b7 (08ef3e02)]     at retry (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/asyncbox/lib/asyncbox.js:66:13)
+2024-01-19 18:38:59:463 [XCUITestDriver@70b7 (08ef3e02)]     at retryInterval (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/asyncbox/lib/asyncbox.js:103:10)
+2024-01-19 18:38:59:463 [XCUITestDriver@70b7 (08ef3e02)]     at XcodeBuild.waitForStart (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/lib/xcodebuild.js:409:7)
+2024-01-19 18:38:59:463 [XCUITestDriver@70b7 (08ef3e02)]     at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/lib/xcodebuild.js:391:26
+2024-01-19 18:38:59:464 [XCUITestDriver@70b7 (08ef3e02)] Unable to start WebDriverAgent: Error: We were not able to retrieve the /status response from the WebDriverAgent server after 60000ms timeout.Try to increase the value of 'appium:wdaLaunchTimeout' capability as a possible workaround.
+2024-01-19 18:38:59:464 [XCUITestDriver@70b7 (08ef3e02)] Launching WebDriverAgent on the device
+2024-01-19 18:38:59:472 [XCUITestDriver@70b7 (08ef3e02)] There is no need to perform the project cleanup. A fresh install has been detected
+2024-01-19 18:38:59:474 [WebDriverAgent] Killing running processes 'xcodebuild.*82579a03f29e60a9805bb342332341f6a8b1df70' for the device 82579a03f29e60a9805bb342332341f6a8b1df70...
+2024-01-19 18:39:00:672 [Xcode] xcodebuild exited with code 'null' and signal 'SIGTERM'
+2024-01-19 18:39:00:769 [XCUITestDriver@70b7 (08ef3e02)] Beginning test with command 'xcodebuild build-for-testing test-without-building -project /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -derivedDataPath /Users/dennybalon/Library/Developer/Xcode/DerivedData/WebDriverAgent-boimmbejufdrdjccnraltpugdpff -destination id=82579a03f29e60a9805bb342332341f6a8b1df70 IPHONEOS_DEPLOYMENT_TARGET=15.8 DEVELOPMENT_TEAM=3GXHKFX93A CODE_SIGN_IDENTITY=Apple Development GCC_TREAT_WARNINGS_AS_ERRORS=0 COMPILER_INDEX_STORE_ENABLE=NO' in directory '/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+2024-01-19 18:39:00:772 [XCUITestDriver@70b7 (08ef3e02)] Output from xcodebuild will not be logged. To change this, use 'showXcodeLog' desired capability
+2024-01-19 18:39:03:159 [XCUITestDriver@70b7 (08ef3e02)] Waiting up to 60000ms for WebDriverAgent to start
+2024-01-19 18:39:03:159 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:03:159 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:03:213 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:03:214 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:04:215 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:04:215 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:04:224 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:04:225 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:05:227 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:05:227 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:05:235 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:05:236 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:06:238 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:06:239 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:06:246 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:06:247 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:07:248 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:07:249 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:07:255 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:07:256 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:08:256 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:08:258 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:08:264 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:08:264 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:09:266 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:09:267 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:09:274 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:09:275 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:10:277 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:10:277 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:10:284 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:10:285 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:11:287 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:11:287 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:11:327 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:11:328 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:12:330 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:12:331 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:12:344 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:12:345 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:13:346 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:13:347 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:13:368 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:13:369 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:14:373 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:14:373 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:14:396 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:14:397 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:15:398 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:15:399 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:15:409 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:15:410 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:16:411 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:16:413 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:16:426 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:16:427 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:17:428 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:17:429 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:17:451 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:17:457 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:18:462 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:18:463 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:18:469 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:18:470 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:19:472 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:19:472 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:19:480 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:19:481 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:20:483 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:20:483 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:20:489 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:20:490 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:21:492 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:21:492 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:21:498 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:21:500 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:22:501 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:22:501 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:22:511 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:22:512 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:23:513 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:23:513 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:23:521 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:23:522 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:24:524 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:24:524 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:24:531 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:24:532 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:25:533 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:25:533 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:25:573 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:25:576 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:26:577 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:26:578 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:26:585 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:26:586 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:27:587 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:27:588 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:27:596 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:27:597 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:28:598 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:28:599 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:28:606 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:28:607 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:29:608 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:29:608 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:29:615 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:29:616 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:30:618 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:30:618 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:30:626 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:30:627 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:31:627 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:31:629 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:31:638 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:31:642 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:32:643 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:32:643 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:32:652 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:32:653 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:33:655 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:33:655 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:33:680 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:33:681 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:34:682 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:34:683 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:34:692 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:34:693 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:35:695 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:35:696 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:35:704 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:35:705 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:36:706 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:36:706 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:36:714 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:36:716 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:37:717 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:37:717 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:37:724 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:37:726 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:38:727 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:38:728 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:38:734 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:38:735 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:39:736 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:39:736 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:39:746 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:39:747 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:40:748 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:40:749 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:40:757 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:40:758 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:41:760 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:41:760 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:41:802 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:41:808 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:42:811 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:42:812 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:42:820 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:42:821 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:43:822 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:43:823 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:43:833 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:43:834 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:44:835 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:44:836 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:44:844 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:44:846 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:45:846 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:45:846 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:45:854 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:45:855 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:46:856 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:46:858 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:46:869 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:46:869 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:47:871 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:47:871 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:47:885 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:47:886 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:48:886 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:48:886 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:48:893 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:48:894 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:49:895 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:49:896 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:49:916 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:49:917 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:50:919 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:50:919 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:50:926 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:50:927 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:51:928 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:51:928 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:51:936 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:51:937 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:52:939 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:52:939 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:52:946 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:52:947 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:53:949 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:53:950 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:53:961 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:53:962 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:54:964 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:54:965 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:54:975 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:54:976 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:55:978 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:55:978 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:55:984 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:55:986 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:56:987 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:56:988 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:56:995 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:56:996 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:57:998 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:57:999 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:58:008 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:58:009 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:39:59:012 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:39:59:012 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:39:59:021 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:39:59:022 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:00:023 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:00:023 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:00:035 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:00:036 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:01:037 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:01:037 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:01:046 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:01:047 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:02:048 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:02:048 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:02:058 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:02:059 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:03:060 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:03:061 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:03:067 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:03:070 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:04:071 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:04:071 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:04:078 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:04:079 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:05:083 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:05:083 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:05:093 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:05:095 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:06:096 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:06:097 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:06:106 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:06:107 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:07:108 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:07:108 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:07:116 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:07:117 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:08:118 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:08:119 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:08:126 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:08:127 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:09:129 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:09:129 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:09:135 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:09:136 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:10:138 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:10:138 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:10:146 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:10:147 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:11:147 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:11:148 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:11:154 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:11:155 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:12:158 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:12:158 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:12:186 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:12:190 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:13:191 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:13:191 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:13:199 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:13:200 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:14:201 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:14:201 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:14:209 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:14:211 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:15:212 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:15:212 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:15:220 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:15:221 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:16:222 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:16:223 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:16:232 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:16:233 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:17:234 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:17:235 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:17:244 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:17:246 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:18:247 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:18:247 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:18:255 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:18:257 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:19:259 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:19:259 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:19:266 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:19:267 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:20:268 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:20:268 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:20:321 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:20:323 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:21:324 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:21:324 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:21:332 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:21:333 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:22:334 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:22:335 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:22:342 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:22:344 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:23:347 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:23:348 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:23:358 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:23:358 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:24:359 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:24:360 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:24:368 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:24:370 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:25:371 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:25:371 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:25:378 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:25:379 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:26:381 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:26:382 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:26:389 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:26:390 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:27:392 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:27:392 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:27:400 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:27:402 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:28:403 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:28:406 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:28:456 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:28:458 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:29:459 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:29:460 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:29:473 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:29:474 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:30:475 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:30:476 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:30:490 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:30:491 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:31:492 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:31:492 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:31:500 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:31:501 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:32:502 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:32:502 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:32:511 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:32:512 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:33:512 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:33:513 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:33:521 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:33:522 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:34:522 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:34:522 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:34:529 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:34:532 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:35:534 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:35:534 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:35:542 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:35:543 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:36:544 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:36:544 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:36:588 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:36:591 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:37:592 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:37:592 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:37:605 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:37:606 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:38:607 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:38:607 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:38:615 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:38:616 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:39:618 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:39:618 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:39:627 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:39:629 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:40:630 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:40:630 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:40:637 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:40:639 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:41:641 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:41:642 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:41:648 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:41:649 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:42:650 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:42:650 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:42:661 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:42:664 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:43:666 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:43:666 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:43:673 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:43:674 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:44:676 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:44:678 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:44:713 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:44:724 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:45:728 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:45:728 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:45:736 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:45:736 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:46:737 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:46:737 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:46:778 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:46:779 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:47:781 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:47:781 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:47:788 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:47:789 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:48:790 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:48:791 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:48:801 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:48:803 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:49:804 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:49:804 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:49:813 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:49:815 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:50:816 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:50:816 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:50:824 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:50:826 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:51:826 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:51:827 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:51:835 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:51:835 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:52:837 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:52:837 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:52:867 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:52:869 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:53:870 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:53:870 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:53:884 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:53:885 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:54:886 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:54:886 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:54:895 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:54:896 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:55:896 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:55:896 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:55:904 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:55:905 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:56:908 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:56:908 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:56:917 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:56:918 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:57:919 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:57:919 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:57:926 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:57:928 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:58:929 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:58:929 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:58:941 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:58:942 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:40:59:944 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:40:59:944 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:40:59:955 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:40:59:957 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:41:00:958 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:41:00:958 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:41:00:986 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:41:00:987 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:41:01:989 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:41:01:989 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:41:01:997 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:41:01:999 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:41:03:002 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:41:03:003 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:41:03:015 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:41:03:018 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:41:04:019 [XCUITestDriver@70b7 (08ef3e02)] Matched '/status' to command name 'getStatus'
+2024-01-19 18:41:04:019 [XCUITestDriver@70b7 (08ef3e02)] Proxying [GET /status] to [GET http://127.0.0.1:9100/status] with no body
+2024-01-19 18:41:04:031 [iProxy@82579a03:9100] Connection was refused to port 9100
+2024-01-19 18:41:04:032 [XCUITestDriver@70b7 (08ef3e02)] socket hang up
+2024-01-19 18:41:04:035 [XCUITestDriver@70b7 (08ef3e02)] Error: Unable to connect to running WebDriverAgent: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+2024-01-19 18:41:04:035 [XCUITestDriver@70b7 (08ef3e02)]     at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/lib/xcodebuild.js:425:17
+2024-01-19 18:41:04:035 [XCUITestDriver@70b7 (08ef3e02)]     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-01-19 18:41:04:036 [XCUITestDriver@70b7 (08ef3e02)]     at wrapped (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/asyncbox/lib/asyncbox.js:93:13)
+2024-01-19 18:41:04:036 [XCUITestDriver@70b7 (08ef3e02)]     at retry (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/asyncbox/lib/asyncbox.js:66:13)
+2024-01-19 18:41:04:036 [XCUITestDriver@70b7 (08ef3e02)]     at retryInterval (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/asyncbox/lib/asyncbox.js:103:10)
+2024-01-19 18:41:04:036 [XCUITestDriver@70b7 (08ef3e02)]     at XcodeBuild.waitForStart (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/lib/xcodebuild.js:409:7)
+2024-01-19 18:41:04:036 [XCUITestDriver@70b7 (08ef3e02)]     at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/lib/xcodebuild.js:391:26
+2024-01-19 18:41:04:036 [XCUITestDriver@70b7 (08ef3e02)] Unable to start WebDriverAgent: Error: We were not able to retrieve the /status response from the WebDriverAgent server after 60000ms timeout.Try to increase the value of 'appium:wdaLaunchTimeout' capability as a possible workaround.
+2024-01-19 18:41:04:037 [XCUITestDriver@70b7 (08ef3e02)] Event 'wdaStartFailed' logged at 1705689664037 (19:41:04 GMT+0100 (Central European Standard Time))
+2024-01-19 18:41:04:038 [XCUITestDriver@70b7 (08ef3e02)] Unable to launch WebDriverAgent because of xcodebuild failure: Unable to start WebDriverAgent: Error: We were not able to retrieve the /status response from the WebDriverAgent server after 60000ms timeout.Try to increase the value of 'appium:wdaLaunchTimeout' capability as a possible workaround.. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+2024-01-19 18:41:04:038 [XCUITestDriver@70b7 (08ef3e02)] Quitting and uninstalling WebDriverAgent
+2024-01-19 18:41:04:039 [XCUITestDriver@70b7 (08ef3e02)] Shutting down sub-processes
+2024-01-19 18:41:04:040 [WebDriverAgent] Shutting down 'xcodebuild' process (pid '95770')
+2024-01-19 18:41:04:040 [WebDriverAgent] Sending 'SIGTERM'...
+2024-01-19 18:41:04:076 [Xcode] xcodebuild exited with code 'null' and signal 'SIGTERM'
+2024-01-19 18:41:04:432 [XCUITestDriver@70b7 (08ef3e02)] Uninstalling WDAs: 'com.facebook.WebDriverAgentRunner.xctrunner'
+2024-01-19 18:41:04:960 [XCUITestDriver@70b7 (08ef3e02)] {}
+2024-01-19 18:41:04:961 [DevCon Factory] Releasing connections for 82579a03f29e60a9805bb342332341f6a8b1df70 device on any port number
+2024-01-19 18:41:04:961 [DevCon Factory] Found cached connections to release: ["82579a03f29e60a9805bb342332341f6a8b1df70:9100"]
+2024-01-19 18:41:04:962 [DevCon Factory] Releasing the listener for '82579a03f29e60a9805bb342332341f6a8b1df70:9100'
+2024-01-19 18:41:04:963 [iProxy@82579a03:9100] Closing the connection
+2024-01-19 18:41:04:963 [DevCon Factory] Cached connections count: 0
+2024-01-19 18:41:04:978 [iProxy@82579a03:9100] The connection has been closed
+2024-01-19 18:41:05:954 [XCUITest] Did not find the temporary XCTest logs root at '/var/folders/1v/3t569c991vld_1dptndcfrb80000gn/T/com.apple.dt.XCTest*/'
+2024-01-19 18:41:05:954 [XCUITest] Cleaning test logs in '/Users/dennybalon/Library/Developer/Xcode/DerivedData/WebDriverAgent-boimmbejufdrdjccnraltpugdpff/Logs' folder
+2024-01-19 18:41:05:955 [XCUITest] Clearing log files
+2024-01-19 18:41:05:986 [XCUITest] Deleting '/Users/dennybalon/Library/Developer/Xcode/DerivedData/WebDriverAgent-boimmbejufdrdjccnraltpugdpff/Logs'. Freeing 20K.
+2024-01-19 18:41:05:996 [XCUITest] Finished clearing log files
+2024-01-19 18:41:05:999 [AppiumDriver@8831] Event 'newSessionStarted' logged at 1705689665999 (19:41:05 GMT+0100 (Central European Standard Time))
+2024-01-19 18:41:06:076 [AppiumDriver@8831] Encountered internal error running command: Error: Unable to launch WebDriverAgent because of xcodebuild failure: Unable to start WebDriverAgent: Error: We were not able to retrieve the /status response from the WebDriverAgent server after 60000ms timeout.Try to increase the value of 'appium:wdaLaunchTimeout' capability as a possible workaround.. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+2024-01-19 18:41:06:076 [AppiumDriver@8831]     at quitAndUninstall (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/lib/driver.js:794:15)
+2024-01-19 18:41:06:077 [AppiumDriver@8831]     at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/lib/driver.js:880:13
+2024-01-19 18:41:06:077 [AppiumDriver@8831]     at wrapped (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/asyncbox/lib/asyncbox.js:93:13)
+2024-01-19 18:41:06:077 [AppiumDriver@8831]     at retry (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/asyncbox/lib/asyncbox.js:66:13)
+2024-01-19 18:41:06:077 [AppiumDriver@8831]     at retryInterval (/Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/node_modules/asyncbox/lib/asyncbox.js:103:10)
+2024-01-19 18:41:06:078 [AppiumDriver@8831]     at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver/lib/driver.js:819:7
+2024-01-19 18:41:06:172 [HTTP] <-- POST /session 500 253467 ms - 1686
+2024-01-19 18:41:06:172 [HTTP] 
