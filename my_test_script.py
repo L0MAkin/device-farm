@@ -311,6 +311,7 @@ def run_test_sequences(driver, device_status_file_path):
             if not all_videos_posted:
                 print("Not all videos posted yet. Running test sequence again.")
             else:
+                driver.execute_script('mobile: terminateApp', {'bundleId': 'com.zhiliaoapp.musically'})
                 print("All videos have been successfully posted.")
 
     except WebDriverException as e:
