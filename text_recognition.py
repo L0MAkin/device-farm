@@ -8,7 +8,7 @@ import io
 
 def process_image(image_base64, should_crop=False):
     # Path to tesseract executable
-    pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
+    pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'
     
     image_data = base64.b64decode(image_base64)
     image = Image.open(io.BytesIO(image_data))
