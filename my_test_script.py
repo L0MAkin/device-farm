@@ -357,12 +357,13 @@ def test_sequence(driver, device_status_file_path):
         set_clipboard_content(driver, video_url)
 
         # Step 5: Open Shortcuts to add video on device
+        time.sleep(5)
         driver.execute_script('mobile: activateApp', {'bundleId': 'com.apple.shortcuts'})
         if not process_page(driver, "Add Video", "Add Video"):
           raise Exception("Failed to start adding video on TikTok.")
         
         # Step 6: wait until video added
-        time.sleep(2)
+        time.sleep(5)
         more_button_locator = (By.XPATH, f"//XCUIElementTypeCell[contains(@name, 'Add Video')]//XCUIElementTypeButton[@name='More']")
 
         # Wait for the 'More' button to appear, which indicates the download is complete
@@ -464,9 +465,9 @@ def test_sequence(driver, device_status_file_path):
                 post_status = update_video_post_status(device_status_file_path, account)
                 if post_status:
                     print("Status updated")
+                    driver.execute_script('mobile: terminateApp', {'bundleId': 'com.zhiliaoapp.musically'})
                 else:
                     print("Status not changed")
-                driver.execute_script('mobile: terminateApp', {'bundleId': 'com.zhiliaoapp.musically'})
                 break
             else:
                 retry_count += 1

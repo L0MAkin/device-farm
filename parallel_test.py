@@ -27,6 +27,7 @@ def run_tests_for_device(udid, appium_port, device_port, device_name, device_sta
     options.wda_local_port = device_port  # Replace with your WDA local port variable
     options.clear_system_files = True
     options.auto_dismiss_alerts = True
+    options.wda_launch_timeout = 120000
     options.no_reset = True
     options.set_capability("skipLogCapture", True)
 
