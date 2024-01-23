@@ -75,7 +75,12 @@ jobs:
         source venv/bin/activate
         python process_video_config.py config_data.json
 
-    - name: Run parallel tests
+    - name: Run cleanup devices
+      run: | 
+        source venv/bin/activate
+        python #Cleanup_devices.py
+    
+    - name: Run parallel script
       run: | 
         source venv/bin/activate
         python parallel_test.py
