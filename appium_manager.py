@@ -11,6 +11,18 @@ BASE_PORT = 4723
 def is_port_in_use(port):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         return s.connect_ex(('localhost', port)) == 0
+    
+def kill_process_on_port(port):
+    # Find process using the port
+    try:
+        # This command finds the PID (process ID) using the specified port
+        result = subprocess.run(['lsof', '-t', '-i', f':{port}'], capture_output=True, text=True)
+        pid = result.stdout.strip()
+        if pid:
+            print(f"Killing process {pid} on port {port}.")
+            subprocess.run(['kill', '-9', pid])
+    except Exception as e:
+        print(f"Error killing process on port {port}: {e}")
 
 def get_connected_udids():
     result = subprocess.run(['idevice_id', '-l'], capture_output=True, text=True)
@@ -25,9 +37,7 @@ def get_connected_udids():
     return udids
 
 def start_appium_on_port(port, device_port):
-    if is_port_in_use(port):
-        print(f"Appium is already running on port {port}.")
-        return None
+    kill_process_on_port(port)
     log_file = f"appium_logs_{port}.log"
     cmd = f'appium -p {port} --use-driver=xcuitest --driver-xcuitest-webdriveragent-port {device_port} --log {log_file}'
     process = subprocess.Popen(cmd, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
