@@ -12,6 +12,7 @@ def get_video_count(unique_id):
 
     max_retries = 4
     retries = 0
+    html_content = ''
 
     while retries < max_retries:
         try:
