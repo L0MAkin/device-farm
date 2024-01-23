@@ -46,7 +46,7 @@ def start_appium_server(udid, appium_port, wda_port):
     appium_command = f"appium -p {appium_port} --use-driver=xcuitest --driver-xcuitest-webdriveragent-port {wda_port}"
     process = subprocess.Popen(appium_command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print(f"Starting Appium server for device {udid} on port {appium_port}.")
-    sleep(5)  # Wait a bit for the Appium server to start
+    sleep(10)  # Wait a bit for the Appium server to start
     return process
 
 def run_tests_on_device(udid, appium_port, wda_port, device_name):
@@ -81,7 +81,7 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
         )
     delete_video_button.click()
     
-    time.sleep(10)
+    time.sleep(5)
     driver.execute_script('mobile: terminateApp', {'bundleId': 'com.zhiliaoapp.musically'})
 
     driver.quit()
@@ -102,9 +102,9 @@ def main():
             run_tests_on_device(udid, appium_port, wda_port, device_name)
     
     # Wait for user input to terminate all Appium servers
-    input("Press Enter to terminate all Appium servers...")
-    for process in appium_processes.values():
-        process.terminate()
+    #input("Press Enter to terminate all Appium servers...")
+    #for process in appium_processes.values():
+        #process.terminate()
 
 if __name__ == '__main__':
     main()
