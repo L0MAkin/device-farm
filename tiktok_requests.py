@@ -2,6 +2,7 @@
 import requests
 import time
 import random
+import os
 
 def get_video_count(unique_id):
     api_url = f"https://www.tiktok.com/@{unique_id}?is_copy_url=1&is_from_webapp=v1"
@@ -26,8 +27,10 @@ def get_video_count(unique_id):
                 return video_count
             else:
                 print(f"Error accessing profile: {unique_id} with status code {response.status_code}")
+                save_html_content(html_content, unique_id, "error_status_code.html")
         except Exception as e:  # Catch any exception and print it
             print(f"Error occurred: {e}")
+            save_html_content(html_content, unique_id, "error_status_code.html")
 
         # If we reach here, it means either the request failed, or conversion failed.
         retries += 1
@@ -39,8 +42,21 @@ def get_video_count(unique_id):
     print("Max retries reached, failed to retrieve data.")
     return None
 
+def save_html_content(html_content, unique_id, filename_suffix):
+    # Ensuring directory exists
+    save_dir = "html_error_logs"
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+
+    # Saving the file
+    file_path = os.path.join(save_dir, f"{unique_id}_{filename_suffix}")
+    with open(file_path, "w", encoding="utf-8") as file:
+        file.write(html_content)
+    print(f"HTML content saved to {file_path}")
+
+
 # Predefined profile ID for direct run
-predefined_profile_id = "dennythedon4"
+predefined_profile_id = "damnhackerdamn"
 
 # Main function for direct run
 def main():
