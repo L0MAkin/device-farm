@@ -38,6 +38,7 @@ def get_connected_udids():
 
 def start_appium_on_port(port, device_port):
     kill_process_on_port(port)
+    sleep(5)
     log_file = f"appium_logs_{port}.log"
     cmd = f'appium -p {port} --use-driver=xcuitest --driver-xcuitest-webdriveragent-port {device_port} --log {log_file}'
     process = subprocess.Popen(cmd, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

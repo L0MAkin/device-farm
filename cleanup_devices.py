@@ -42,6 +42,7 @@ def kill_process_on_port(port):
 
 def start_appium_server(udid, appium_port, wda_port):
     kill_process_on_port(appium_port)
+    sleep(5)
     appium_command = f"appium -p {appium_port} --use-driver=xcuitest --driver-xcuitest-webdriveragent-port {wda_port}"
     process = subprocess.Popen(appium_command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print(f"Starting Appium server for device {udid} on port {appium_port}.")
