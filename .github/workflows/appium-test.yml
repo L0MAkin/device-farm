@@ -78,7 +78,7 @@ jobs:
     - name: Run cleanup devices
       run: | 
         source venv/bin/activate
-        python #Cleanup_devices.py
+        python cleanup_devices.py
     
     - name: Run parallel script
       run: | 
