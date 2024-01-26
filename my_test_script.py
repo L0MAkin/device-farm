@@ -284,12 +284,12 @@ def handle_popup_and_retry(driver):
     except TimeoutException:
         raise Exception("Can't find TikTok folder or 'introducing popup'.")
     
-def fetch_video_count(unique_id, service_url="http://localhost:6000/get_video_count"):
+def fetch_video_count(unique_id="tiktonic09", service_url="http://localhost:6000/get_video_count"):
     try:
         response = requests.get(service_url, params={'unique_id': unique_id})
         if response.status_code == 200:
             data = response.json()
-            return data.get('video_count')
+            return data
         else:
             print(f"Error fetching video count: HTTP {response.status_code}")
             return None
