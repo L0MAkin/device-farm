@@ -59,8 +59,17 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
         source venv/bin/activate
-        uvicorn fast_api:app --host 0.0.0.0 --port 6000
+        uvicorn fast_api:app --host 0.0.0.0 --port 6000 &
         sleep 10  # Give FastAPI some time to start
+
+    - name: Check root endpoint
+      run: |
+        RESPONSE=$(curl -s 'http://localhost:6000/')
+        echo "Root endpoint response: $RESPONSE"
+        if [[ "$RESPONSE" != *'Hello World'* ]]; then
+          echo "Root endpoint test failed"
+          exit 1
+        fi
 
     - name: Create JSON File from CONFIG_DATA
       env:
@@ -93,6 +102,9 @@ jobs:
       run: | 
         source venv/bin/activate
         python parallel_test.py
+
+    - name: Gracefully shutdown FastAPI app
+      run: curl -X POST http://localhost:6000/shutdown
 
     - name: Github commit and push
       run: |
