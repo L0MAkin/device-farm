@@ -60,3 +60,12 @@ def get_video_count_logic(unique_id: str):
 
     print("Max retries reached, failed to retrieve data.")
     return None
+
+@app.post("/shutdown")
+async def shutdown():
+    gateway.shutdown()
+    print("Gateway has been shut down.")
+    # Use Uvicorn's shutdown mechanism if running programmatically
+    # Or signal to whatever ASGI server you're using that it should shutdown
+    return {"message": "Shutting down."}
+    
