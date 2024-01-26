@@ -53,6 +53,14 @@ jobs:
         source venv/bin/activate
         pip install -r requirements.txt
 
+    - name: Start FastAPI service
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      run: |
+        uvicorn fast_api:app --reload --host 0.0.0.0 --port 6000 &
+        sleep 10  # Give FastAPI some time to start
+
     - name: Create JSON File from CONFIG_DATA
       env:
         CONFIG_DATA: ${{ toJSON(github.event.client_payload.config_data) }}
