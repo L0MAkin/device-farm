@@ -365,7 +365,7 @@ def test_sequence(driver, device_status_file_path):
         
 
         # Step 4: Set a URL to the clipboard
-        '''time.sleep(5)
+        time.sleep(5)
         driver.execute_script('mobile: activateApp', {'bundleId': 'com.facebook.WebDriverAgentRunner.xctrunner'})
         set_clipboard_content(driver, video_url)
 
@@ -443,13 +443,13 @@ def test_sequence(driver, device_status_file_path):
         else:
             print("Selected checkbox is already present.")
 
-        # Step 11 Video post'''
+        # Step 11 Video post
 
         account_forcheck = account.lstrip('@')
         video_count = fetch_video_count(account_forcheck)
         print(video_count)
         time.sleep(5)
-        '''post_button_locator = (By.XPATH, f"//XCUIElementTypeButton[@name='Post']")
+        post_button_locator = (By.XPATH, f"//XCUIElementTypeButton[@name='Post']")
         post_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located(post_button_locator))
         # Settings update
         new_settings = {
@@ -462,7 +462,7 @@ def test_sequence(driver, device_status_file_path):
         new_settings = {
             'snapshotMaxDepth': 1
         }
-        driver.update_settings(new_settings)'''
+        driver.update_settings(new_settings)
         
         # Step 12: Wait until the video uploaded
         print("Before timer", datetime.now().isoformat())
@@ -490,7 +490,7 @@ def test_sequence(driver, device_status_file_path):
             raise Exception("Video upload failed: the video count did not increase.")
 
         # Step 13: Back to default state and delete video from folder
-        '''new_settings = {
+        new_settings = {
             'waitForIdleTimeout': 10,
             'customSnapshotTimeout': 15,
             'animationCoolOffTimeout': 2,
@@ -501,7 +501,7 @@ def test_sequence(driver, device_status_file_path):
         driver.execute_script('mobile: activateApp', {'bundleId': 'com.apple.shortcuts'})
         time.sleep(5)
         process_page(driver, "Delete Video", "Last step")
-        time.sleep(10)'''
+        time.sleep(10)
 
     except WebDriverException as e:
         print(f"WebDriverException occurred: {e}")
