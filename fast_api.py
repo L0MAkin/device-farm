@@ -1,18 +1,20 @@
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, HTTPException
-from requests_ip_rotator import ApiGateway, EXTRA_REGIONS, ALL_REGIONS
+from fastapi import FastAPI
+from requests_ip_rotator import ApiGateway, EXTRA_REGIONS
 import time
 import requests
 import random
-import asyncio
+import pprint
 
-gateway = ApiGateway("https://www.tiktok.com", regions=EXTRA_REGIONS)
+
+gateway = ApiGateway("https://www.tiktok.com")
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Start API 
     gateway.start(force=True)
+    pprint.pprint(gateway.endpoints)
     yield
-    # Clean up the ML models and release the resources
+    # Finish API
     gateway.shutdown()
 
 app = FastAPI(lifespan=lifespan)
@@ -45,7 +47,6 @@ def get_video_count_logic(unique_id: str):
                 count_start = html_content.find('"videoCount":') + len('"videoCount":')
                 count_end = html_content.find(',', count_start)
                 video_count_str = html_content[count_start:count_end]
-
                 video_count = int(video_count_str)
                 return video_count
             else:
