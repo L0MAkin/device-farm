@@ -12,7 +12,7 @@ gateway = ApiGateway("https://www.tiktok.com")
 async def lifespan(app: FastAPI):
     # Start API 
     gateway.start(force=True)
-    pprint.pprint(gateway.endpoints)
+    print(gateway.endpoints)
     yield
     # Finish API
     gateway.shutdown()
