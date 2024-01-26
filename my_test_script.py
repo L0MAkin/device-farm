@@ -470,7 +470,7 @@ def test_sequence(driver, device_status_file_path):
         print("After timer", datetime.now().isoformat())
         max_retries = 5
         retry_count = 0
-        current_timeout = 10
+        current_timeout = 15
 
         while retry_count < max_retries:
             time.sleep(current_timeout)
