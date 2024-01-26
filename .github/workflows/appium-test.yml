@@ -59,7 +59,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
         source venv/bin/activate
-        uvicorn fast_api:app --host 0.0.0.0 --port 6000 &
+        uvicorn fast_api:app --host 0.0.0.0 --port 6000 --log-config logging_config.json &
         sleep 10  # Give FastAPI some time to start
 
     - name: Check root endpoint
