@@ -1,0 +1,39 @@
+2024-01-26 18:58:57 - uvicorn.error - INFO - Started server process [69157]
+2024-01-26 18:58:57 - uvicorn.error - INFO - Waiting for application startup.
+2024-01-26 18:58:57 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 18:58:57 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 18:58:57 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 18:58:57 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 18:58:57 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 18:58:57 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 18:58:57 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 18:58:57 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 18:58:57 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 18:58:57 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 18:59:02 - uvicorn.error - INFO - Application startup complete.
+2024-01-26 18:59:02 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:6000 (Press CTRL+C to quit)
+2024-01-26 18:59:09 - uvicorn.access - INFO - 127.0.0.1:50958 - "GET / HTTP/1.1" 200
+2024-01-26 19:04:10 - uvicorn.access - INFO - 127.0.0.1:51002 - "GET /get_video_count?unique_id=iamthedennyofficial3 HTTP/1.1" 200
+2024-01-26 19:04:28 - uvicorn.access - INFO - 127.0.0.1:51004 - "GET /get_video_count?unique_id=dennythedon4 HTTP/1.1" 200
+2024-01-26 19:04:48 - uvicorn.access - INFO - 127.0.0.1:51006 - "GET /get_video_count?unique_id=iamthedennyofficial3 HTTP/1.1" 200
+2024-01-26 19:05:07 - uvicorn.access - INFO - 127.0.0.1:51008 - "GET /get_video_count?unique_id=dennythedon4 HTTP/1.1" 200
+2024-01-26 19:05:24 - uvicorn.access - INFO - 127.0.0.1:51010 - "GET /get_video_count?unique_id=iamthedennyofficial3 HTTP/1.1" 200
+2024-01-26 19:05:42 - uvicorn.access - INFO - 127.0.0.1:51013 - "GET /get_video_count?unique_id=dennythedon4 HTTP/1.1" 200
+2024-01-26 19:06:32 - uvicorn.access - INFO - 127.0.0.1:51014 - "GET /get_video_count?unique_id=damnhackerdamn HTTP/1.1" 200
+2024-01-26 19:06:38 - uvicorn.access - INFO - 127.0.0.1:51015 - "GET /get_video_count?unique_id=dennythedon4 HTTP/1.1" 200
+2024-01-26 19:07:11 - uvicorn.access - INFO - 127.0.0.1:51017 - "GET /get_video_count?unique_id=damnhackerdamn HTTP/1.1" 200
+2024-01-26 19:07:37 - uvicorn.access - INFO - 127.0.0.1:51018 - "GET /get_video_count?unique_id=dennisbalon HTTP/1.1" 200
+2024-01-26 19:07:47 - uvicorn.access - INFO - 127.0.0.1:51019 - "GET /get_video_count?unique_id=damnhackerdamn HTTP/1.1" 200
+2024-01-26 19:08:15 - uvicorn.access - INFO - 127.0.0.1:51023 - "GET /get_video_count?unique_id=dennisbalon HTTP/1.1" 200
+2024-01-26 19:08:51 - uvicorn.access - INFO - 127.0.0.1:51025 - "GET /get_video_count?unique_id=dennisbalon HTTP/1.1" 200
+2024-01-26 19:09:10 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 19:09:10 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 19:09:10 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 19:09:10 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 19:09:10 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 19:09:10 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 19:09:10 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 19:09:10 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 19:09:10 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 19:09:10 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-01-26 19:09:13 - uvicorn.access - INFO - 127.0.0.1:51027 - "POST /shutdown HTTP/1.1" 200
