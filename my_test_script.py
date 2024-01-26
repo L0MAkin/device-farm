@@ -13,11 +13,11 @@ from appium.webdriver.common.touch_action import TouchAction
 import time
 from datetime import datetime
 import json
-import tiktok_requests
 import text_recognition
 import io
 from PIL import Image
 import base64
+import requests
 
 
 # Core functions: ------------------------
@@ -283,6 +283,19 @@ def handle_popup_and_retry(driver):
         select_tiktok_folder(driver)  # Retry folder selection after handling the popup
     except TimeoutException:
         raise Exception("Can't find TikTok folder or 'introducing popup'.")
+    
+def fetch_video_count(unique_id, service_url="http://localhost:6000/get_video_count"):
+    try:
+        response = requests.get(service_url, params={'unique_id': unique_id})
+        if response.status_code == 200:
+            data = response.json()
+            return data.get('video_count')
+        else:
+            print(f"Error fetching video count: HTTP {response.status_code}")
+            return None
+    except requests.RequestException as e:
+        print(f"Request failed: {e}")
+        return None
 
 # Test Sequence Manager Function
 
@@ -433,11 +446,12 @@ def test_sequence(driver, device_status_file_path):
         # Step 11 Video post
 
         account_forcheck = account.lstrip('@')
-        video_count = tiktok_requests.get_video_count(account_forcheck)
+        video_count = fetch_video_count(account_forcheck)
         print(video_count)
         time.sleep(5)
         post_button_locator = (By.XPATH, f"//XCUIElementTypeButton[@name='Post']")
         post_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located(post_button_locator))
+        # Settings update
         new_settings = {
             'waitForIdleTimeout': 0,
             'customSnapshotTimeout': 0,
@@ -460,7 +474,7 @@ def test_sequence(driver, device_status_file_path):
 
         while retry_count < max_retries:
             time.sleep(current_timeout)
-            video_count_after_post = tiktok_requests.get_video_count(account_forcheck)
+            video_count_after_post = fetch_video_count(account_forcheck)
             if video_count_after_post > video_count:
                 post_status = update_video_post_status(device_status_file_path, account)
                 if post_status:

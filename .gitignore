@@ -1,2 +1,5 @@
 __pycache__/
 venv/
+default_video_config.json
+device_mapping_config.json
+test_gateway.py
