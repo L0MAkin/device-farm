@@ -1,19 +1,19 @@
-2024-01-26 14:08:15:466 [Appium] Welcome to Appium v2.2.1
-2024-01-26 14:08:15:469 [Appium] Non-default server args:
-2024-01-26 14:08:15:471 [Appium] { useDrivers: [ 'xcuitest' ], driver: { xcuitest: { wdaLocalPort: 9100 } } }
-2024-01-26 14:08:15:472 [Appium] Attempting to load driver xcuitest...
-2024-01-26 14:08:15:473 [Appium] Requiring driver at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver
-2024-01-26 14:08:16:455 [Appium] Appium REST http interface listener started on http://0.0.0.0:4723
-2024-01-26 14:08:16:457 [Appium] You can provide the following URLs in your client code to connect to this server:
-2024-01-26 14:08:16:458 [Appium] 	http://127.0.0.1:4723/ (only accessible from the same host)
-2024-01-26 14:08:16:458 [Appium] 	http://192.168.132.150:4723/
-2024-01-26 14:08:16:458 [Appium] 	http://169.254.168.86:4723/
-2024-01-26 14:08:16:459 [Appium] 	http://169.254.162.234:4723/
-2024-01-26 14:08:16:459 [Appium] 	http://169.254.171.33:4723/
-2024-01-26 14:08:16:459 [Appium] 	http://169.254.156.86:4723/
-2024-01-26 14:08:16:459 [Appium] 	http://169.254.163.186:4723/
-2024-01-26 14:08:16:460 [Appium] 	http://169.254.211.86:4723/
-2024-01-26 14:08:16:460 [Appium] Available drivers:
-2024-01-26 14:08:16:461 [Appium]   - xcuitest@5.8.2 (automationName 'XCUITest')
-2024-01-26 14:08:16:461 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
-2024-01-26 14:08:38:768 [Appium] Received SIGTERM - shutting down
+2024-01-26 17:00:57:674 [Appium] Welcome to Appium v2.2.1
+2024-01-26 17:00:57:678 [Appium] Non-default server args:
+2024-01-26 17:00:57:681 [Appium] { useDrivers: [ 'xcuitest' ], driver: { xcuitest: { wdaLocalPort: 9100 } } }
+2024-01-26 17:00:57:682 [Appium] Attempting to load driver xcuitest...
+2024-01-26 17:00:57:683 [Appium] Requiring driver at /Users/dennybalon/.appium/node_modules/appium-xcuitest-driver
+2024-01-26 17:00:58:599 [Appium] Appium REST http interface listener started on http://0.0.0.0:4723
+2024-01-26 17:00:58:608 [Appium] You can provide the following URLs in your client code to connect to this server:
+2024-01-26 17:00:58:609 [Appium] 	http://127.0.0.1:4723/ (only accessible from the same host)
+2024-01-26 17:00:58:609 [Appium] 	http://192.168.132.150:4723/
+2024-01-26 17:00:58:609 [Appium] 	http://169.254.168.86:4723/
+2024-01-26 17:00:58:610 [Appium] 	http://169.254.162.234:4723/
+2024-01-26 17:00:58:610 [Appium] 	http://169.254.171.33:4723/
+2024-01-26 17:00:58:610 [Appium] 	http://169.254.156.86:4723/
+2024-01-26 17:00:58:633 [Appium] 	http://169.254.163.186:4723/
+2024-01-26 17:00:58:633 [Appium] 	http://169.254.211.86:4723/
+2024-01-26 17:00:58:634 [Appium] Available drivers:
+2024-01-26 17:00:58:634 [Appium]   - xcuitest@5.8.2 (automationName 'XCUITest')
+2024-01-26 17:00:58:634 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2024-01-26 17:01:21:200 [Appium] Received SIGTERM - shutting down
