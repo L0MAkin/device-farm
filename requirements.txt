@@ -101,12 +101,12 @@ httpx==0.26.0
 uvicorn==0.27.0
 starlette==0.35.1
 sympy==1.12
-tensorboard>=2.15
+tensorboard==2.15.1
 tensorboard-data-server
 tensorflow==2.15.0
 tensorflow-estimator==2.15.0
 tensorflow-io-gcs-filesystem==0.34.0
-tensorflow-macos 
+tensorflow-macos==2.15.0
 torch==2.2.0
 torchvision==0.17.0
 ultralytics==8.1.17
