@@ -82,7 +82,7 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
     delete_video_button.click()
     
     time.sleep(5)
-    driver.execute_script('mobile: terminateApp', {'bundleId': 'com.zhiliaoapp.musically'})
+    driver.execute_script('mobile: terminateApp', {'bundleId': 'com.zhiliaoapp.musically3GXHKFX93A'})
 
     driver.quit()
     
