@@ -101,7 +101,7 @@ httpx==0.26.0
 uvicorn==0.27.0
 starlette==0.35.1
 sympy==1.12
-tensorboard
+tensorboard>=2.15
 tensorboard-data-server
 tensorflow==2.15.0
 tensorflow-estimator==2.15.0
