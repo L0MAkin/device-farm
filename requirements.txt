@@ -101,8 +101,8 @@ httpx==0.26.0
 uvicorn==0.27.0
 starlette==0.35.1
 sympy==1.12
-tensorboard==2.15.1
-tensorboard-data-server==0.7.2
+tensorboard
+tensorboard-data-server
 tensorflow==2.15.0
 tensorflow-estimator==2.15.0
 tensorflow-io-gcs-filesystem==0.34.0
