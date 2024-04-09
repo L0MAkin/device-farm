@@ -99,3 +99,14 @@ fastapi==0.109.0
 httpcore==1.0.2
 httpx==0.26.0
 uvicorn==0.27.0
+starlette==0.35.1
+sympy==1.12
+tensorboard==2.15.1
+tensorboard-data-server==0.7.2
+tensorflow==2.15.0
+tensorflow-estimator==2.15.0
+tensorflow-io-gcs-filesystem==0.34.0
+tensorflow-macos 
+torch==2.2.0
+torchvision==0.17.0
+ultralytics==8.1.17

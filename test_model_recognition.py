@@ -8,7 +8,7 @@ import io
 # Ensure the YOLOv5 folder is in the Python path and you are in the YOLOv5 environment
 # Load the YOLOv5 model
 def run_yolo_object_detection(image_base64):
-    model_path = '/Users/lomakin/yolov5/runs/train/exp5/weights/best.pt'
+    model_path = '/Users/dennybalon/yolov5/runs/train/exp5/weights/best.pt'
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, force_reload=False)  # force_reload to ensure the latest model is loaded
 
     # Read the screenshot
