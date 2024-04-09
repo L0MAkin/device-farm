@@ -53,7 +53,13 @@ jobs:
         source venv/bin/activate
         pip install -r requirements.txt
 
-    
+    - name: Debugging information
+      run: |
+        source venv/bin/activate
+        idevice_id -l
+        which idevice_id
+        echo $PATH
+        
     - name: Run cleanup devices
       run: | 
         source venv/bin/activate
