@@ -15,6 +15,18 @@ jobs:
     runs-on: [self-hosted, Mac-mini-farm]
 
     steps:
+    
+    - name: Set up PATH to include Homebrew binaries
+      run: echo "/opt/homebrew/bin:$PATH" >> $GITHUB_ENV
+    
+    - name: Debug PATH
+      run: echo $PATH
+    
+    - name: Locate idevice_id
+      run: which idevice_id || echo "idevice_id not found"
+
+    - name: List connected iOS devices
+      run: idevice_id -l
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
@@ -53,17 +65,6 @@ jobs:
         source venv/bin/activate
         pip install -r requirements.txt
         
-    - name: Source profile and run brew command
-      run: |
-        source ~/.bash_profile || true
-        brew install libimobiledevice
-
-
-    - name: Check idevice_id and PATH
-      run: |
-        echo $PATH
-        which idevice_id || echo "idevice_id not found"
-        idevice_id -l
         
     - name: Run cleanup devices
       run: | 
