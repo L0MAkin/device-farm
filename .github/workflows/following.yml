@@ -17,7 +17,7 @@ jobs:
     steps:
     
     - name: Set up PATH to include Homebrew binaries
-      run: echo "/opt/homebrew/bin:$PATH" >> $GITHUB_ENV
+      run: echo "PATH=/opt/homebrew/bin:$PATH" >> $GITHUB_ENV
     
     - name: Debug PATH
       run: echo $PATH
