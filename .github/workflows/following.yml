@@ -53,8 +53,11 @@ jobs:
         source venv/bin/activate
         pip install -r requirements.txt
         
-    - name: Install libimobiledevice
-      run: brew install libimobiledevice
+    - name: Source profile and run brew command
+      run: |
+        source ~/.bash_profile || true
+        brew install libimobiledevice
+
 
     - name: Check idevice_id and PATH
       run: |
