@@ -52,13 +52,15 @@ jobs:
       run: |
         source venv/bin/activate
         pip install -r requirements.txt
+        
+    - name: Install libimobiledevice
+      run: brew install libimobiledevice
 
-    - name: Debugging information
+    - name: Check idevice_id and PATH
       run: |
-        source venv/bin/activate
-        idevice_id -l
-        which idevice_id
         echo $PATH
+        which idevice_id || echo "idevice_id not found"
+        idevice_id -l
         
     - name: Run cleanup devices
       run: | 
