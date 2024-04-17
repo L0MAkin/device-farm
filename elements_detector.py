@@ -9,7 +9,7 @@ def process_image(image_base64, element_to_analyze ='likes'):
     elements_locations = {
         'search': {'screen_part': 'top-right','element_path': '/Users/lomakin/Downloads/search_final.png'},
         'comments': {'screen_part': 'right','element_path': '/Users/lomakin/Downloads/coment2_tiktok.png'},
-        'likes': {'screen_part': 'right','element_path': '/Users/lomakin/Downloads/like_comments.png'},
+        'likes': {'screen_part': 'right','element_path': '/Users/dennybalon/Documents/like_comments.png'},
     }
     spinner_path = elements_locations[element_to_analyze]['element_path']
     spinner_image = cv.imread(spinner_path)
