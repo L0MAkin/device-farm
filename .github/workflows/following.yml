@@ -74,7 +74,7 @@ jobs:
     - name: Run parallel script
       run: | 
         source venv/bin/activate
-        python following_users.py
+        python parallel_test.py
 
     - name: Github commit and push
       run: |
