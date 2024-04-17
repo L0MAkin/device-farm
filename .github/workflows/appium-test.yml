@@ -16,6 +16,18 @@ jobs:
 
     steps:
 
+    - name: Set up PATH to include Homebrew binaries
+      run: echo "PATH=/opt/homebrew/bin:$PATH" >> $GITHUB_ENV
+    
+    - name: Debug PATH
+      run: echo $PATH
+    
+    - name: Locate idevice_id
+      run: which idevice_id || echo "idevice_id not found"
+
+    - name: List connected iOS devices
+      run: idevice_id -l
+        
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
