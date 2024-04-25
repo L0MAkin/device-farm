@@ -26,7 +26,7 @@ def process_image(image_base64, element_to_analyze ='likes'):
         screen_part = elements_locations[element_name]['screen_part']
         
         if screen_part == 'right':
-            start_x = width - (width // 4)
+            start_x = width - (width // 3)
             start_y = height// 3
             roi = image[start_y:height, start_x:width]
         elif screen_part == 'top-right':
@@ -45,7 +45,7 @@ def process_image(image_base64, element_to_analyze ='likes'):
     roi, screen_part = select_roi(image, element_to_analyze, elements_locations)
     offset_x, offset_y = 0, 0
     if screen_part == 'right':
-        offset_x = width - (width // 4)  # Calculate offset for the right third
+        offset_x = width - (width // 3)  # Calculate offset for the right third
         offset_y = height// 3
     elif 'top-right' in screen_part:
         offset_x = width - (width // 6)  # Calculate offset for the right third
@@ -206,11 +206,11 @@ def process_image(image_base64, element_to_analyze ='likes'):
 if __name__ == "__main__":
     # Sample base64 string or load image and convert to base64
     # For example:
-    with open("/Users/lomakin/Downloads/IMG_2819.PNG", "rb") as image_file:
+    with open("/Users/lomakin/Downloads/IMG_2893.PNG", "rb") as image_file:
         image_base64 = base64.b64encode(image_file.read()).decode('utf-8')
 
     #image_base64 = 'your_base64_string_here'  # Replace with your base64 string
 
     # Call the function with the sample base64 string and cropping option
-    coordinates = process_image(image_base64, element_to_analyze ='comments')
+    coordinates = process_image(image_base64, element_to_analyze ='likes')
     print(coordinates)

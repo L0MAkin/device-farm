@@ -20,7 +20,7 @@ import common_actions
 import test_model_recognition
 import feed_swipping
 
-coords_up = 89, 573, 230, 211
+coords_up = 89, 563, 230, 211
 coords_down = 142, 200, 147, 573
 coords_back = 41, 520, 320, 525
 
@@ -162,7 +162,7 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
         driver.execute_script('mobile: doubleTap', {'x':x, 'y':y})
 
         sleep(10)
-        coords = 189, 573, 230, 211
+        coords = 189, 563, 230, 211
         common_actions.swipe(driver,*coords)
         sleep(10)
         screenshot_base64 = driver.get_screenshot_as_base64()
@@ -172,7 +172,7 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
         if not select_comments:
             raise Exception("Failed to open comments.")
         sleep(2)
-        coords = 189, 573, 230, 211
+        coords = 189, 563, 230, 211
         common_actions.swipe(driver,*coords)
         sleep(2)
         screenshot_base64 = driver.get_screenshot_as_base64()
