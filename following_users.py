@@ -20,9 +20,9 @@ import common_actions
 import test_model_recognition
 import feed_swipping
 
-coords_up = 89, 523, 230, 211
-coords_down = 142, 200, 147, 523
-coords_back = 41, 510, 310, 515
+coords_up = 89, 510, 230, 211
+coords_down = 142, 200, 147, 510
+coords_back = 41, 510, 300, 515
 
 usernames = [
     "effyafterdark",
@@ -162,7 +162,7 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
         driver.execute_script('mobile: doubleTap', {'x':x, 'y':y})
 
         sleep(10)
-        coords = 189, 523, 230, 211
+        coords = 189, 510, 230, 211
         common_actions.swipe(driver,*coords)
         sleep(10)
         screenshot_base64 = driver.get_screenshot_as_base64()
@@ -172,7 +172,7 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
         if not select_comments:
             raise Exception("Failed to open comments.")
         sleep(2)
-        coords = 189, 523, 230, 211
+        coords = 189, 510, 230, 211
         common_actions.swipe(driver,*coords)
         sleep(2)
         screenshot_base64 = driver.get_screenshot_as_base64()
@@ -199,7 +199,7 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
         follow_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located(follow_button_locator))
         follow_button.click()
         sleep(5)
-        coords_back2 = 25, 130, 310, 131
+        coords_back2 = 25, 130, 300, 131
         common_actions.swipe(driver, *coords_back2)
 
         back_button_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`label == 'Back to previous screen'`]")
