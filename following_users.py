@@ -63,9 +63,10 @@ def perform_search_and_action(driver, username):
         'snapshotMaxDepth': 50
     }
     driver.update_settings(new_settings)
-    search_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeStaticText[`label == 'Search'`]")
-    search = WebDriverWait(driver, 10).until(EC.presence_of_element_located(search_locator))
-    search.click()
+
+    #search_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeStaticText[`label == 'Search'`]")
+    #search = WebDriverWait(driver, 10).until(EC.presence_of_element_located(search_locator))
+    #search.click()
 
     search_area_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeSearchField[`label == 'Search'`]")
     search_area = WebDriverWait(driver, 60).until(EC.presence_of_element_located(search_area_locator))
