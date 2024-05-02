@@ -123,6 +123,8 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
     options.set_capability("skipLogCapture", True)
 
     driver = webdriver.Remote(f'http://localhost:{appium_port}', options=options)
+
+    print(driver.session_id)
     
     open_tiktok_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.ACCESSIBILITY_ID, "Open Tiktok Feed"))
