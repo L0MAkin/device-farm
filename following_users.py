@@ -21,8 +21,8 @@ import test_model_recognition
 import feed_swipping
 
 coords_up = 89, 510, 230, 211
-coords_down = 142, 200, 147, 510
-coords_back = 41, 510, 300, 515
+coords_down = 142, 200, 147, 500
+coords_back = 41, 500, 300, 500
 
 usernames = [
     "effyafterdark",
