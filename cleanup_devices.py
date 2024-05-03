@@ -66,6 +66,7 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
     options.clear_system_files = True
     options.auto_dismiss_alerts = True
     options.no_reset = False
+    options.use_new_wda = True
     options.set_capability("skipLogCapture", True)
 
     driver = webdriver.Remote(f'http://localhost:{appium_port}', options=options)
