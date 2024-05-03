@@ -68,7 +68,7 @@ def perform_search_and_action(driver, username):
     #search = WebDriverWait(driver, 10).until(EC.presence_of_element_located(search_locator))
     #search.click()
 
-    search_area_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeSearchField[`label == 'Search'`]")
+    search_area_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeSearchField")
     search_area = WebDriverWait(driver, 60).until(EC.presence_of_element_located(search_area_locator))
     description = f'{username}'
     search_area.send_keys(description)
