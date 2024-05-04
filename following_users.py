@@ -20,9 +20,9 @@ import common_actions
 import test_model_recognition
 import feed_swipping
 
-coords_up = 89, 510, 230, 211
-coords_down = 142, 200, 147, 500
-coords_back = 41, 500, 300, 500
+coords_up = 89, 498, 230, 211
+coords_down = 142, 200, 147, 498
+coords_back = 41, 400, 300, 420
 
 usernames = [
     "effyafterdark",
