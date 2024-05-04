@@ -395,7 +395,9 @@ def test_sequence(driver, device_status_file_path):
         
         # Step 8: Uploader select
         time.sleep(5)
-        process_page(driver, "recordPageUploadButton", "Second")
+        UploadButton_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`name == 'recordPageUploadButton'`][2]")
+        UploadButton= WebDriverWait(driver, 30).until(EC.presence_of_element_located(UploadButton_locator))
+        UploadButton.click()
        
         # Step 9: Select Folder
         time.sleep(5)
