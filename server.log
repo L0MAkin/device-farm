@@ -199,3 +199,29 @@
 2024-05-06 12:39:28 - botocore.credentials - INFO - Found credentials in environment variables.
 2024-05-06 12:39:28 - botocore.credentials - INFO - Found credentials in environment variables.
 2024-05-06 12:41:02 - uvicorn.access - INFO - 127.0.0.1:54962 - "POST /shutdown HTTP/1.1" 200
+2024-05-06 12:45:43 - uvicorn.error - INFO - Started server process [72275]
+2024-05-06 12:45:43 - uvicorn.error - INFO - Waiting for application startup.
+2024-05-06 12:45:43 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:45:43 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:45:43 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:45:43 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:45:43 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:45:43 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:45:43 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:45:43 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:45:43 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:45:43 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:45:47 - uvicorn.error - INFO - Application startup complete.
+2024-05-06 12:45:47 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:6000 (Press CTRL+C to quit)
+2024-05-06 12:45:56 - uvicorn.access - INFO - 127.0.0.1:55063 - "GET / HTTP/1.1" 200
+2024-05-06 12:52:32 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:52:32 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:52:32 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:52:32 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:52:32 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:52:32 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:52:32 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:52:32 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:52:32 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:52:32 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-06 12:52:34 - uvicorn.access - INFO - 127.0.0.1:55218 - "POST /shutdown HTTP/1.1" 200
