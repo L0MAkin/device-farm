@@ -432,7 +432,7 @@ def test_sequence(driver, device_status_file_path):
             next_button.click()
         # Past description
         time.sleep(5)
-        text_description_area_locator = (By.ACCESSIBILITY_ID, f"Create more informative content when you go into greater detail with 4000 characters.")
+        text_description_area_locator = (By.ACCESSIBILITY_ID, f"Add description...")
         text_description_area = WebDriverWait(driver, 60).until(EC.presence_of_element_located(text_description_area_locator))
         text_description_area.send_keys(description)
         # Hide keyboard
