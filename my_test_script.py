@@ -413,7 +413,7 @@ def test_sequence(driver, device_status_file_path):
 
         # Step 10 Video upload and add description
         time.sleep(5)
-        next_button_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`label CONTAINS 'Next'`]")
+        next_button_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`name CONTAINS 'Next'`]")
         next_button = WebDriverWait(driver, 60).until(EC.presence_of_element_located(next_button_locator))
         next_button.click()
         # Past description
