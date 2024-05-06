@@ -395,7 +395,7 @@ def test_sequence(driver, device_status_file_path):
         
         # Step 8: Uploader select
         time.sleep(5)
-        UploadButton_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`name == 'recordPageUploadButton'`][2]")
+        UploadButton_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`name CONTAINS 'recordPageUploadButton'`]")
         UploadButton= WebDriverWait(driver, 30).until(EC.presence_of_element_located(UploadButton_locator))
         UploadButton.click()
        
@@ -413,7 +413,7 @@ def test_sequence(driver, device_status_file_path):
 
         # Step 10 Video upload and add description
         time.sleep(5)
-        next_button_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`name CONTAINS 'Next'`]")
+        next_button_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`name CONTAINS 'editPageNextButton'`]")
         next_button = WebDriverWait(driver, 60).until(EC.presence_of_element_located(next_button_locator))
         next_button.click()
         # Past description
