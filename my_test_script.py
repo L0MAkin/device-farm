@@ -395,7 +395,7 @@ def test_sequence(driver, device_status_file_path):
         
         # Step 8: Uploader select
         time.sleep(5)
-        UploadButton_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`name CONTAINS 'recordPageUploadButton'`]")
+        UploadButton_locator = (By.XPATH, f"//XCUIElementTypeButton[@name='recordPageUploadButton']")
         UploadButton= WebDriverWait(driver, 30).until(EC.presence_of_element_located(UploadButton_locator))
         UploadButton.click()
        
@@ -412,10 +412,22 @@ def test_sequence(driver, device_status_file_path):
 
 
         # Step 10 Video upload and add description
-        time.sleep(5)
-        next_button_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`name CONTAINS 'editPageNextButton'`]")
-        next_button = WebDriverWait(driver, 60).until(EC.presence_of_element_located(next_button_locator))
-        next_button.click()
+        select_video_button_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeImage[`name == 'ic_selectpic_before_optimize'`]")
+        select_video_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located(select_video_button_locator))
+
+        if select_video_button:
+            time.sleep(5)
+            next_button_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`name CONTAINS 'Next'`]")
+            next_button = WebDriverWait(driver, 60).until(EC.presence_of_element_located(next_button_locator))
+            next_button.click()
+            time.sleep(3)
+            next_button = WebDriverWait(driver, 60).until(EC.presence_of_element_located(next_button_locator))
+            next_button.click()
+        else:
+            time.sleep(5)
+            next_button_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`name CONTAINS 'Next'`]")
+            next_button = WebDriverWait(driver, 60).until(EC.presence_of_element_located(next_button_locator))
+            next_button.click()
         # Past description
         time.sleep(5)
         text_description_area_locator = (By.ACCESSIBILITY_ID, f"Create more informative content when you go into greater detail with 4000 characters.")
