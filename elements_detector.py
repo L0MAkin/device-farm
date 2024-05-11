@@ -173,7 +173,7 @@ def process_image(image_base64, element_to_analyze ='likes'):
 
     # Initialize variables to keep track of the best match
     aspect_ratio_threshold = 0.1
-    best_match_value = 1
+    best_match_value = 0.1
     best_match_contour = None
 
 
