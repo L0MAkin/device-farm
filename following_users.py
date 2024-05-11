@@ -267,14 +267,6 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
     driver = webdriver.Remote(f'http://localhost:{appium_port}', options=options)
 
     print(f"session_id = {driver.session_id} for {udid}")
-
-    sleep(2)
-    common_actions.swipe(driver, *coords_update)
-    sleep(5)
-    common_actions.swipe(driver, *coords_update)
-    sleep(5)
-    common_actions.swipe(driver, *coords_update2)
-    sleep(20)
     
     open_tiktok_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.ACCESSIBILITY_ID, "Open Tiktok Feed"))
