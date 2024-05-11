@@ -210,7 +210,7 @@ def check_follow_state(driver):
         if follow_button:
           # update_status(udid, username, "followed")
             print("The profile is not followed.")
-            return {'button': follow_button, 'state': 'unfollowed'}
+            return {'button': follow_button, 'status': 'unfollowed'}
         else:
             print("The profile is followed.")
     except:
