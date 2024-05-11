@@ -22,7 +22,7 @@ import test_model_recognition
 import common_actions
 
 swipe_count = 10
-swipe_up_coords = 189, 573, 230, 211
+swipe_up_coords = 189, 473, 230, 211
 swipe_back_coords = 41, 420, 320, 425
 delay_ranges = {
     'Unfollow': (5, 10),
@@ -31,26 +31,8 @@ delay_ranges = {
     'Follow': (15, 20)
 }
 
-
-def preprocess_data(data):
-    """
-    Preprocess the data to keep only the instance with the highest confidence
-    for each label that has multiple coordinates.
-    """
-    preprocessed_data = {}
-    for label, items in data.items():
-        if len(items) > 1:
-            # If there are multiple instances, keep the one with the highest confidence
-            highest_confidence_item = max(items, key=lambda x: x['confidence'])
-            preprocessed_data[label] = [highest_confidence_item]
-        else:
-            # If there's only one instance, keep it as is
-            preprocessed_data[label] = items
-    return preprocessed_data
-
-
 def determine_state(data):
-    data = preprocess_data(data)
+    data = common_actions.preprocess_data(data)
     indicators = ['comment', 'like', 'profile_img', 'save', 'share']
     indicators_counts = sum(1 for label in indicators if label in data)
     state_criteria = indicators_counts >=3
@@ -83,18 +65,6 @@ def determine_state(data):
         return "Indeterminate"
 
 
-def get_coordinate(data):
-    data = preprocess_data(data)
-    like_data = data['like'][0]  # Assuming there's at least one 'like' entry
-    coords = like_data['coordinates']
-    coordinates = [
-        coords.get('x_min'),
-        coords.get('y_min'),
-        coords.get('x_max'),
-        coords.get('y_max'),
-        ]
-    return coordinates
-
 def tiktok_swiper(driver, swipe_count):
     for _ in range(swipe_count):
         screenshot_base64 = driver.get_screenshot_as_base64()
@@ -110,7 +80,7 @@ def tiktok_swiper(driver, swipe_count):
         delay = random.randint(*delay_range)
 
         if state in ['Follow', 'Unfollow']:  # Assuming you want actions for these states
-            tap_coords = get_coordinate(data) if 'like' in data else None
+            tap_coords = common_actions.get_coordinate(data) if 'like' in data else None
             common_actions.tap_elements(driver, *tap_coords)  # Tap or double-tap on 'like'
             
             # Swipe logic (adjust coordinates as per your app's swipe direction)

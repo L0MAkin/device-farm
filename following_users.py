@@ -355,7 +355,7 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
         sleep(2)
         common_actions.swipe(driver, *coords_update2)
         follow_state_recheck_result = check_follow_state(driver)
-        if follow_state_recheck_result['button'] and follow_state_recheck_result['state'] == 'unfollowed':
+        if follow_state_recheck_result['button'] and follow_state_recheck_result['status'] == 'unfollowed':
             print("Maybe banned...")
             sys.exit(1)
         
