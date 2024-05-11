@@ -5,49 +5,11 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from multiprocessing import Process
-import subprocess
-import socket
 from time import sleep
 from appium.options.ios import XCUITestOptions
 from appium import webdriver
+import common_actions
 
-# Base ports for Appium and WebDriverAgent
-BASE_PORT = 4723
-WDA_BASE_PORT = 9100
-
-
-def get_connected_udids():
-    result = subprocess.run(['idevice_id', '-l'], capture_output=True, text=True)
-    udids = result.stdout.strip().split('\n')
-    # Print detected UDIDs to the console
-    if udids:
-        print("Detected connected device UDIDs:")
-        for udid in udids:
-            print(udid)
-    else:
-        print("No connected devices detected.")
-    return udids
-
-def kill_process_on_port(port):
-    # Find process using the port
-    try:
-        # This command finds the PID (process ID) using the specified port
-        result = subprocess.run(['lsof', '-t', '-i', f':{port}'], capture_output=True, text=True)
-        pid = result.stdout.strip()
-        if pid:
-            print(f"Killing process {pid} on port {port}.")
-            subprocess.run(['kill', '-9', pid])
-    except Exception as e:
-        print(f"Error killing process on port {port}: {e}")
-
-def start_appium_server(udid, appium_port, wda_port):
-    kill_process_on_port(appium_port)
-    sleep(5)
-    appium_command = f"appium -p {appium_port} --use-driver=xcuitest --driver-xcuitest-webdriveragent-port {wda_port}"
-    process = subprocess.Popen(appium_command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    print(f"Starting Appium server for device {udid} on port {appium_port}.")
-    sleep(10)  # Wait a bit for the Appium server to start
-    return process
 
 def run_tests_on_device(udid, appium_port, wda_port, device_name):
     print(f"Running tests on device {udid} via Appium server on port {appium_port}...")
@@ -89,23 +51,26 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
     
 
 def main():
-    udids = get_connected_udids()
-    appium_processes = {}
+    udids = common_actions.get_connected_udids()
+    appium_processes = []
+    processes = []
 
     for index, udid in enumerate(udids):
         device_name = f"iPhone({index+1})"
-        appium_port = BASE_PORT + index * 1  # Increment by 2 to avoid port conflicts
-        wda_port = WDA_BASE_PORT + index * 1
-        process = start_appium_server(udid, appium_port, wda_port)
-        if process:
-            appium_processes[udid] = process
-            # Run tests for this device right after starting the Appium server
-            run_tests_on_device(udid, appium_port, wda_port, device_name)
-    
-    # Wait for user input to terminate all Appium servers
-    #input("Press Enter to terminate all Appium servers...")
-    #for process in appium_processes.values():
-        #process.terminate()
+        appium_port = common_actions.BASE_PORT + index * 1  # Increment by 1 to avoid port conflicts
+        wda_port = common_actions.WDA_BASE_PORT + index * 1
+        
+        appium_process = common_actions.start_appium_server(udid, appium_port, wda_port)
+        appium_processes.append(appium_process)
+
+        process = Process(target=run_tests_on_device, args=(udid, appium_port, wda_port, device_name))
+        processes.append(process)
+        process.start()
+
+    # Wait for all processes to complete
+    for process in processes:
+        process.join()
 
 if __name__ == '__main__':
     main()
+
