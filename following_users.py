@@ -338,17 +338,17 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
         common_actions.swipe(driver, *coords_update2)
         sleep(2)
         follow_state_result = check_follow_state(driver)
-        if follow_state_result['button'] and follow_state_result['state'] == 'unfollowed':
+        if follow_state_result['button'] and follow_state_result['status'] == 'unfollowed':
             print("Clicking the Follow button...")
             follow_state_result['button'].click()  # Click the button if it's unfollowed
             print("Profile followed.")
             update_status(udid, username, 'followed')
 
-        elif follow_state_result['state'] == 'followed':
+        elif follow_state_result['status'] == 'followed':
             update_status(udid, username, 'followed')
             print(f"No action needed. Profile is already followed")
         else:
-            print(f"An error occurred or button not found: {follow_state_result.get['state']}")
+            print(f"An error occurred or button not found: {follow_state_result.get['status']}")
 
         sleep(2)
         common_actions.swipe(driver, *coords_update2)
