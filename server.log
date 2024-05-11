@@ -415,3 +415,35 @@
 2024-05-11 16:51:11 - botocore.credentials - INFO - Found credentials in environment variables.
 2024-05-11 16:51:11 - botocore.credentials - INFO - Found credentials in environment variables.
 2024-05-11 16:51:46 - uvicorn.access - INFO - 127.0.0.1:49665 - "POST /shutdown HTTP/1.1" 200
+2024-05-11 17:29:41 - uvicorn.error - INFO - Started server process [10962]
+2024-05-11 17:29:41 - uvicorn.error - INFO - Waiting for application startup.
+2024-05-11 17:29:41 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:29:41 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:29:41 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:29:41 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:29:41 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:29:41 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:29:41 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:29:41 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:29:41 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:29:41 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:29:45 - uvicorn.error - INFO - Application startup complete.
+2024-05-11 17:29:45 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:6000 (Press CTRL+C to quit)
+2024-05-11 17:29:54 - uvicorn.access - INFO - 127.0.0.1:49976 - "GET / HTTP/1.1" 200
+2024-05-11 17:34:13 - uvicorn.access - INFO - 127.0.0.1:50149 - "GET /get_video_count?unique_id=luciameowmurr HTTP/1.1" 200
+2024-05-11 17:34:51 - uvicorn.access - INFO - 127.0.0.1:50151 - "GET /get_video_count?unique_id=luciameowmurr HTTP/1.1" 200
+2024-05-11 17:35:12 - uvicorn.access - INFO - 127.0.0.1:50153 - "GET /get_video_count?unique_id=user4042043833695 HTTP/1.1" 200
+2024-05-11 17:35:27 - uvicorn.access - INFO - 127.0.0.1:50155 - "GET /get_video_count?unique_id=luciameowmurr HTTP/1.1" 200
+2024-05-11 17:35:54 - uvicorn.access - INFO - 127.0.0.1:50158 - "GET /get_video_count?unique_id=user4042043833695 HTTP/1.1" 200
+2024-05-11 17:36:30 - uvicorn.access - INFO - 127.0.0.1:50160 - "GET /get_video_count?unique_id=user4042043833695 HTTP/1.1" 200
+2024-05-11 17:36:47 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:36:47 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:36:47 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:36:47 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:36:47 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:36:47 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:36:47 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:36:47 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:36:47 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:36:47 - botocore.credentials - INFO - Found credentials in environment variables.
+2024-05-11 17:36:49 - uvicorn.access - INFO - 127.0.0.1:50164 - "POST /shutdown HTTP/1.1" 200
