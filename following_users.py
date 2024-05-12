@@ -24,7 +24,7 @@ import os
 import random
 import sys
 
-coords_up = 89, 498, 230, 211
+coords_up = 89, 488, 100, 211
 coords_down = 142, 200, 147, 498
 coords_back = 41, 400, 300, 450
 coords_update = 258, 150, 261, 480
