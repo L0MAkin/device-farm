@@ -182,6 +182,7 @@ def like_comments_if_available(driver):
             # Attempt to like the comment if like coordinates are found
             select_likes = common_actions.tap_elements(driver, *coordinates_likes)
             if select_likes:
+                sleep(2)
                 common_actions.swipe(driver, *coords_down)
                 print("Successfully liked a comment.")
                 break  # Exit loop after successful like

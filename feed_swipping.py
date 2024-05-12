@@ -72,6 +72,7 @@ def tiktok_swiper(driver, swipe_count):
 
         if not data:
             print("No data retrieved from screenshot.")
+            common_actions.swipe(driver, *swipe_up_coords)
             continue  # Skip to the next iteration if no data
 
         state = determine_state(data)
@@ -86,7 +87,7 @@ def tiktok_swiper(driver, swipe_count):
                 print(f"like tapped")
                 sleep(1)
                 common_actions.swipe(driver, *swipe_up_coords)
-                print(f"swipe runnedß")
+                print(f"swipe runned")
                  # Tap or double-tap on 'like'
             else:
                 # Swipe logic (adjust coordinates as per your app's swipe direction)
