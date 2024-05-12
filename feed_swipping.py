@@ -80,11 +80,12 @@ def tiktok_swiper(driver, swipe_count):
         delay = random.randint(*delay_range)
 
         if state in ['Follow', 'Unfollow']:  # Assuming you want actions for these states
-            tap_coords = common_actions.get_coordinate(data) if 'like' in data else None
-            common_actions.tap_elements(driver, *tap_coords)  # Tap or double-tap on 'like'
-            
-            # Swipe logic (adjust coordinates as per your app's swipe direction)
-            common_actions.swipe(driver, *swipe_up_coords)
+            if 'like' in data:
+                tap_coords = common_actions.get_coordinate(data, 'like') 
+                common_actions.tap_elements(driver, *tap_coords)  # Tap or double-tap on 'like'
+            else:
+                # Swipe logic (adjust coordinates as per your app's swipe direction)
+                common_actions.swipe(driver, *swipe_up_coords)
         else:
             print(f"'{state}' swipe without action.")
             common_actions.swipe(driver, *swipe_up_coords)
