@@ -22,7 +22,7 @@ import test_model_recognition
 import common_actions
 
 swipe_count = 10
-swipe_up_coords = 89, 488, 100, 211
+swipe_up_coords = 89, 460, 100, 211
 swipe_back_coords = 41, 420, 320, 425
 delay_ranges = {
     'Unfollow': (5, 10),

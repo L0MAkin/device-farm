@@ -363,13 +363,13 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
         coords_back2 = 55, 110, 300, 112
         common_actions.swipe(driver, *coords_back2)
         print ("swipe to the left")
-        sleep(5)
+        sleep(2)
         #back_button_locator = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`label CONTAINS 'Back'`]")
         #back_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located(back_button_locator))
         #back_button.click()
         #print ("back 1")
 
-        sleep(5)
+        sleep(2)
         back_button_locator2 = (By.IOS_CLASS_CHAIN, f"**/XCUIElementTypeButton[`label CONTAINS 'Back'`]")
         back_button2 = WebDriverWait(driver, 10).until(EC.presence_of_element_located(back_button_locator2))
         back_button2.click()
