@@ -82,7 +82,12 @@ def tiktok_swiper(driver, swipe_count):
         if state in ['Follow', 'Unfollow']:  # Assuming you want actions for these states
             if 'like' in data:
                 tap_coords = common_actions.get_coordinate(data, 'like') 
-                common_actions.tap_elements(driver, *tap_coords)  # Tap or double-tap on 'like'
+                common_actions.tap_elements(driver, *tap_coords) 
+                print(f"like tapped")
+                sleep(1)
+                common_actions.swipe(driver, *swipe_up_coords)
+                print(f"swipe runnedß")
+                 # Tap or double-tap on 'like'
             else:
                 # Swipe logic (adjust coordinates as per your app's swipe direction)
                 common_actions.swipe(driver, *swipe_up_coords)
