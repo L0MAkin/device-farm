@@ -1,0 +1,72 @@
+name: Run Parallel Appium following flow
+
+on:
+  workflow_dispatch:
+    inputs:
+      config_data:
+        description: 'JSON Config Data'  # Describe your input here
+        required: false
+        default: ''  # Default value if none provided
+  repository_dispatch:
+    types: [run-swiping-flow]
+
+jobs:
+  run-tests:
+    runs-on: [self-hosted, Mac-mini-farm]
+
+    steps:
+    
+    - name: Set up PATH to include Homebrew binaries
+      run: echo "PATH=/opt/homebrew/bin:$PATH" >> $GITHUB_ENV
+    
+    - name: Debug PATH
+      run: echo $PATH
+    
+    - name: Locate idevice_id
+      run: which idevice_id || echo "idevice_id not found"
+
+    - name: List connected iOS devices
+      run: idevice_id -l
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.18.0'  # Use a Node.js version that's compatible with your Appium version
+
+    - name: Install Appium
+      run: npm install -g appium@2.2.1
+    
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11.7'
+
+    - name: Check architecture
+      run: echo $(arch)
+
+    - name: Check Python binary architecture
+      run: file $(which python)
+
+    - name: Create Python virtual environment
+      run: |
+        python -m venv venv
+        source venv/bin/activate
+
+    - name: Upgrade pip
+      run: |
+        source venv/bin/activate
+        python -m pip install --upgrade pip
+
+    - name: Install dependencies
+      run: |
+        source venv/bin/activate
+        pip install -r requirements.txt
+        
+        
+    - name: Run cleanup devices
+      run: | 
+        source venv/bin/activate
+        python cleanup_devices.py
