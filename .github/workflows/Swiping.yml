@@ -1,4 +1,4 @@
-name: Run Parallel Appium following flow
+name: Run Swiping flow
 
 on:
   workflow_dispatch:
