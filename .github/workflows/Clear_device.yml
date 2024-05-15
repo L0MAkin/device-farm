@@ -8,7 +8,7 @@ on:
         required: false
         default: ''  # Default value if none provided
   repository_dispatch:
-    types: [run-swiping-flow]
+    types: [run-clearing-flow]
 
 jobs:
   run-tests:
