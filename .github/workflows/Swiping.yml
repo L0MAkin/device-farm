@@ -75,13 +75,3 @@ jobs:
       run: | 
         source venv/bin/activate
         python feed_swipping.py
-
-    - name: Github commit and push
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add .
-        git commit -m "chore: autopublish $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
-        git push https://${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}@github.com/L0MAkin/device-farm.git HEAD:main
-      env:
-        MY_PERSONAL_ACCESS_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
