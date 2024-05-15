@@ -1,4 +1,4 @@
-name: Run Parallel Appium following flow
+name: Run clearing flow
 
 on:
   workflow_dispatch:
