@@ -29,13 +29,13 @@ jobs:
       run: idevice_id -l
       
     - name: List files in shared directory
-      run: ls -la /Users/Shared/github-runner
+      run: ls -la /Users/Shared/runner+service
 
     - name: Create an empty test file
-      run: touch /Users/Shared/github-runner/test_file.txt
+      run: touch /Users/Shared/runner+service/test_file.txt
 
     - name: List files in shared directory
-      run: ls -la /Users/Shared/github-runner
+      run: ls -la /Users/Shared/runner+service
       
     - name: Set up Node.js
       uses: actions/setup-node@v2
