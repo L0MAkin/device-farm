@@ -62,12 +62,18 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
     driver.execute_script('mobile: activateApp', {'bundleId': 'com.apple.shortcuts'})
     time.sleep(5)
 
+    driver.execute_script('mobile: terminateApp', {'bundleId': 'com.apple.shortcuts'})
+    
+    driver.execute_script('mobile: activateApp', {'bundleId': 'com.apple.shortcuts'})
+    delete_video_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ACCESSIBILITY_ID, "Delete Video"))
+        )
+    delete_video_button.click()
+
     #test part start
-
-
     #sqlite access test
-    account_id = "@Testsuser4042043833695"
-    google_drive_folder_id = "@1OXjXhQOPgMlTJt1BqAPrAaUdmHEClcj4" 
+    account_id = "@Tests3"
+    google_drive_folder_id = "XXXX1OXjXhQOPgMlTJt1BqAPrAaUdmHEClcj4" 
     udid = "0ed074da2b7f3ca8d57fac71041e681bc39711a6"
     update_account_info(account_id, udid, google_drive_folder_id)
     info = get_account_upload_info(account_id)
@@ -84,13 +90,6 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
         print(f"Video successfully transferred to device {udid}")
 
     #test part end
-    driver.execute_script('mobile: terminateApp', {'bundleId': 'com.apple.shortcuts'})
-    
-    driver.execute_script('mobile: activateApp', {'bundleId': 'com.apple.shortcuts'})
-    delete_video_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.ACCESSIBILITY_ID, "Delete Video"))
-        )
-    delete_video_button.click()
     
     time.sleep(5)
     driver.execute_script('mobile: terminateApp', {'bundleId': 'com.zhiliaoapp.musically'})
