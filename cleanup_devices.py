@@ -9,6 +9,32 @@ from time import sleep
 from appium.options.ios import XCUITestOptions
 from appium import webdriver
 import common_actions
+import sqlite3
+import subprocess
+
+
+DATABASE_FILE = '/Users/Shared/runner+service/upload_service.db'
+
+def get_account_upload_info(account_id):
+    conn = sqlite3.connect(DATABASE_FILE)
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM accounts WHERE account_id = ?', (account_id,))
+    result = cursor.fetchall()
+    conn.close()
+    return result
+
+def update_account_info(account_id, udid, google_drive_folder_id):
+    conn = sqlite3.connect(DATABASE_FILE)
+    cursor = conn.cursor()
+    cursor.execute('''
+        INSERT INTO accounts (account_id, udid, google_drive_folder_id)
+        VALUES (?, ?, ?)
+        ON CONFLICT(account_id) DO UPDATE SET
+            udid = ?,
+            google_drive_folder_id = ?
+    ''', (account_id, udid, google_drive_folder_id, udid, google_drive_folder_id))
+    conn.commit()
+    conn.close()
 
 
 def run_tests_on_device(udid, appium_port, wda_port, device_name):
@@ -36,6 +62,28 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
     driver.execute_script('mobile: activateApp', {'bundleId': 'com.apple.shortcuts'})
     time.sleep(5)
 
+    #test part start
+
+
+    #sqlite access test
+    account_id = "@user4042043833695"
+    google_drive_folder_id = "1OXjXhQOPgMlTJt1BqAPrAaUdmHEClcj4" 
+    udid = "0ed074da2b7f3ca8d57fac71041e681bc39711a6"
+    update_account_info(account_id, udid, google_drive_folder_id)
+    info = get_account_upload_info(account_id)
+    print(info)
+
+
+    #video transfer test
+    udid = "92ebd89ccf7dfe3b698c322678a9630ef9b95823"
+    video_path = "/Users/Shared/runner+service/tiktok_video_to_device/0ed074da2b7f3ca8d57fac71041e681bc39711a6/@user4042043833695/100620242140video_winter.MOV"  # Replace with actual video path
+    result = subprocess.run(["/Users/Shared/runner+service/video_transfer_fromPC.sh", udid, video_path], capture_output=True, text=True)
+    if result.returncode != 0:
+        print(f"Error transferring video to device {udid}: {result.stderr}")
+    else:
+        print(f"Video successfully transferred to device {udid}")
+
+    #test part end
     driver.execute_script('mobile: terminateApp', {'bundleId': 'com.apple.shortcuts'})
     
     driver.execute_script('mobile: activateApp', {'bundleId': 'com.apple.shortcuts'})
