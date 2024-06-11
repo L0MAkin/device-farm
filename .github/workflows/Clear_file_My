@@ -1,4 +1,4 @@
-name: Run clearing flow
+name: Run clearing flow my macbook
 
 on:
   workflow_dispatch:
