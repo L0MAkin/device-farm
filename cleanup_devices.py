@@ -66,8 +66,8 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
 
 
     #sqlite access test
-    account_id = "@user4042043833695"
-    google_drive_folder_id = "1OXjXhQOPgMlTJt1BqAPrAaUdmHEClcj4" 
+    account_id = "@Testsuser4042043833695"
+    google_drive_folder_id = "@1OXjXhQOPgMlTJt1BqAPrAaUdmHEClcj4" 
     udid = "0ed074da2b7f3ca8d57fac71041e681bc39711a6"
     update_account_info(account_id, udid, google_drive_folder_id)
     info = get_account_upload_info(account_id)
@@ -76,7 +76,7 @@ def run_tests_on_device(udid, appium_port, wda_port, device_name):
 
     #video transfer test
     udid = "92ebd89ccf7dfe3b698c322678a9630ef9b95823"
-    video_path = "/Users/Shared/runner+service/tiktok_video_to_device/0ed074da2b7f3ca8d57fac71041e681bc39711a6/@user4042043833695/100620242140video_winter.MOV"  # Replace with actual video path
+    video_path = "/Users/Shared/runner+service/tiktok_video_to_device/0ed074da2b7f3ca8d57fac71041e681bc39711a6/@user4042043833695/TikTok#100620242140video_winter.MOV"  # Replace with actual video path
     result = subprocess.run(["/Users/Shared/runner+service/video_transfer_fromPC.sh", udid, video_path], capture_output=True, text=True)
     if result.returncode != 0:
         print(f"Error transferring video to device {udid}: {result.stderr}")
