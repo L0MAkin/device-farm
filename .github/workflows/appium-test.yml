@@ -12,7 +12,7 @@ on:
 
 jobs:
   run-tests:
-    runs-on: [self-hosted, Mac-mini-farm]
+    runs-on: [self-hosted, lomakin-macbook-farm]
 
     steps:
 
